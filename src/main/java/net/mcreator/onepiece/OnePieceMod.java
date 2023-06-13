@@ -33,6 +33,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.onepiece.init.OnePieceModSounds;
 import net.mcreator.onepiece.init.OnePieceModItems;
+import net.mcreator.onepiece.init.OnePieceModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -55,6 +56,7 @@ public class OnePieceMod {
 		OnePieceModSounds.REGISTRY.register(bus);
 
 		OnePieceModItems.REGISTRY.register(bus);
+		OnePieceModEntities.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}

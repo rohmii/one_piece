@@ -681,6 +681,23 @@
           "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java"
         ]
       }
+    },
+    {
+      "name": "DenDenMushi",
+      "type": "animatedentity",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "den_den_mushi",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/forge/biome_modifier/den_den_mushi_biome_modifier.json",
+          "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java",
+          "src/main/java/net/mcreator/onepiece/client/renderer/DenDenMushiRenderer.java",
+          "src/main/java/net/mcreator/onepiece/entity/model/DenDenMushiModel.java",
+          "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -710,12 +727,14 @@
   "language_map": {
     "en_us": {
       "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
+      "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "key.one_piece.secondary": "Secondary",
       "key.one_piece.primary": "Primary",
       "key.one_piece.tertiary": "Tertiary",
       "subtitles.overtaken": "",
       "item.one_piece.overtaken": "Music Disc",
-      "item.one_piece.overtaken.desc": "Overtaken OST"
+      "item.one_piece.overtaken.desc": "Overtaken OST",
+      "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg"
     }
   },
   "foldersRoot": {
