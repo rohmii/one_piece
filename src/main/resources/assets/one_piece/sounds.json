@@ -1,0 +1,10 @@
+{
+  "overtaken": {
+    "sounds": [
+      {
+        "name": "one_piece:one_piece_ost_overtaken",
+        "stream": false
+      }
+    ]
+  }
+}

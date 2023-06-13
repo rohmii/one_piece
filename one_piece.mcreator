@@ -654,6 +654,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "Overtaken",
+      "type": "musicdisc",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overtaken",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/one_piece/models/item/overtaken.json",
+          "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -670,13 +684,25 @@
       "value": "false"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "overtaken",
+      "files": [
+        "one_piece_ost_overtaken"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
       "key.one_piece.secondary": "Secondary",
       "key.one_piece.primary": "Primary",
-      "key.one_piece.tertiary": "Tertiary"
+      "key.one_piece.tertiary": "Tertiary",
+      "subtitles.overtaken": "",
+      "item.one_piece.overtaken": "Music Disc",
+      "item.one_piece.overtaken.desc": "Overtaken OST"
     }
   },
   "foldersRoot": {

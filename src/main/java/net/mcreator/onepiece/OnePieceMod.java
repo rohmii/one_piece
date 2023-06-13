@@ -31,6 +31,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.onepiece.init.OnePieceModSounds;
 import net.mcreator.onepiece.init.OnePieceModItems;
 
 import java.util.function.Supplier;
@@ -51,6 +52,7 @@ public class OnePieceMod {
 		MinecraftForge.EVENT_BUS.register(this);
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		OnePieceModSounds.REGISTRY.register(bus);
 
 		OnePieceModItems.REGISTRY.register(bus);
 

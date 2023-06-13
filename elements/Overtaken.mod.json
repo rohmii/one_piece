@@ -1,0 +1,19 @@
+{
+  "_fv": 43,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "overtaken",
+    "description": "Overtaken OST",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "specialInfo": [],
+    "hasGlow": true,
+    "music": {
+      "value": "CUSTOM:overtaken"
+    },
+    "lengthInTicks": 24000,
+    "analogOutput": 0
+  }
+}
