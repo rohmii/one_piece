@@ -171,7 +171,7 @@ public class DenDenMushiEntity extends PathfinderMob implements IAnimatable {
 
 	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
 		if (this.animationprocedure.equals("empty")) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("Den_Den_Mushi.animation", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.Den_Den_Mushi.idle", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
