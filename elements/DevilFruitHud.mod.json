@@ -1,0 +1,240 @@
+{
+  "_fv": 43,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_0.png",
+          "use1Xscale": false,
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bara_primary.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BaraDisplayCondition"
+          },
+          "x": 308,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PrimaryBar1"
+          },
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PrimaryBar2"
+          },
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PrimaryBar3"
+          },
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PrimaryBar4"
+          },
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PrimaryBar5"
+          },
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PrimaryBar6"
+          },
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PrimaryBar7"
+          },
+          "x": 307,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_0.png",
+          "use1Xscale": false,
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bara_secondary.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BaraDisplayCondition"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SecondaryBar1"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SecondaryBar2"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SecondaryBar3"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SecondaryBar4"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SecondaryBar5"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SecondaryBar6"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SecondaryBar7"
+          },
+          "x": 329,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_0.png",
+          "use1Xscale": false,
+          "x": 352,
+          "y": 97
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "DevilFruitHudDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

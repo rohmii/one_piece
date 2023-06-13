@@ -1,0 +1,15 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Tertiary",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "TertiaryOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "TertiaryOnKeyReleased"
+    }
+  }
+}

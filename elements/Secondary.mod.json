@@ -1,0 +1,15 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Secondary",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SecondaryOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "SecondaryOnKeyReleased"
+    }
+  }
+}

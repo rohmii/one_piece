@@ -1,0 +1,716 @@
+{
+  "mod_elements": [
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "PrimaryOnKeyPressed",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BaraTickUpdate",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bara_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/BaraTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Primary",
+      "type": "keybind",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/network/PrimaryMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "SecondaryOnKeyPressed",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SecondaryOnKeyReleased",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Secondary",
+      "type": "keybind",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/network/SecondaryMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "ChopChopFruitPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chop_chop_fruit_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/ChopChopFruitPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChopChopFruit",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chop_chop_fruit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/item/ChopChopFruitItem.java",
+          "src/main/resources/assets/one_piece/models/item/chop_chop_fruit.json"
+        ]
+      }
+    },
+    {
+      "name": "BaraPassive",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bara_passive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/BaraPassiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DevilFruitHudDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "devil_fruit_hud_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/DevilFruitHudDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "DevilFruitHud",
+      "type": "overlay",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "devil_fruit_hud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/client/screens/DevilFruitHudOverlay.java"
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "PrimaryBar1",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "PrimaryBar2",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "PrimaryBar3",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "PrimaryBar4",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "PrimaryBar5",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "PrimaryBar6",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "PrimaryBar7",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/PrimaryBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "BaraDisplayCondition",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bara_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/BaraDisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "Testt",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TesttProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SecondaryBar1",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SecondaryBar2",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SecondaryBar3",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SecondaryBar4",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SecondaryBar5",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SecondaryBar6",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SecondaryBar7",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SecondaryBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "Tertiary",
+      "type": "keybind",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/network/TertiaryMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "TertiaryOnKeyPressed",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TertiaryOnKeyReleased",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BaraPassive2",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bara_passive_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/BaraPassive2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ChopChopUser",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "DevilFruitUser",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
+      "key.one_piece.secondary": "Secondary",
+      "key.one_piece.primary": "Primary",
+      "key.one_piece.tertiary": "Tertiary"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "HUDs",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "one_piece",
+    "modName": "one_piece",
+    "version": "1.0.0",
+    "author": "remin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [
+      "kleiders_custom_renderer"
+    ],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.onepiece",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}
