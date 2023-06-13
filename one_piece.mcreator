@@ -47,7 +47,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "BaraTickUpdate",
@@ -82,7 +83,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Bara"
     },
     {
       "name": "Primary",
@@ -95,7 +97,8 @@
         "files": [
           "src/main/java/net/mcreator/onepiece/network/PrimaryMessage.java"
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "SecondaryOnKeyPressed",
@@ -114,7 +117,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "SecondaryOnKeyReleased",
@@ -137,7 +141,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "Secondary",
@@ -150,7 +155,8 @@
         "files": [
           "src/main/java/net/mcreator/onepiece/network/SecondaryMessage.java"
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "ChopChopFruitPlayerFinishesUsingItem",
@@ -169,7 +175,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Bara"
     },
     {
       "name": "ChopChopFruit",
@@ -183,7 +190,8 @@
           "src/main/java/net/mcreator/onepiece/item/ChopChopFruitItem.java",
           "src/main/resources/assets/one_piece/models/item/chop_chop_fruit.json"
         ]
-      }
+      },
+      "path": "~/Bara"
     },
     {
       "name": "BaraPassive",
@@ -206,7 +214,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Bara"
     },
     {
       "name": "DevilFruitHudDisplayOverlayIngame",
@@ -588,7 +597,8 @@
         "files": [
           "src/main/java/net/mcreator/onepiece/network/TertiaryMessage.java"
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "TertiaryOnKeyPressed",
@@ -607,7 +617,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "TertiaryOnKeyReleased",
@@ -630,7 +641,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/DevilFruits"
     },
     {
       "name": "BaraPassive2",
@@ -653,7 +665,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Bara"
     },
     {
       "name": "Overtaken",
@@ -710,6 +723,14 @@
     "children": [
       {
         "name": "HUDs",
+        "children": []
+      },
+      {
+        "name": "Bara",
+        "children": []
+      },
+      {
+        "name": "DevilFruits",
         "children": []
       }
     ]
