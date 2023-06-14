@@ -986,6 +986,20 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Baws",
+      "type": "musicdisc",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baws",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/item/BawsItem.java",
+          "src/main/resources/assets/one_piece/models/item/baws.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1018,10 +1032,19 @@
       ],
       "category": "neutral",
       "subtitle": "strawhat"
+    },
+    {
+      "name": "weewee",
+      "files": [
+        "can-i-put-my-balls-in-your-jaws"
+      ],
+      "category": "record",
+      "subtitle": "Can I?"
     }
   ],
   "language_map": {
     "en_us": {
+      "item.one_piece.baws.desc": "Can I?",
       "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
       "subtitles.strawhatequip": "strawhat",
       "key.one_piece.primary": "Primary",
@@ -1034,8 +1057,10 @@
       "item.one_piece.straw_hat_chestplate": "elementgui.armor.body",
       "gui.one_piece.snail_menu.message": "Message:",
       "gui.one_piece.snail_menu.label_empty": "Your Number:",
+      "subtitles.weewee": "Can I?",
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "key.one_piece.secondary": "Secondary",
+      "item.one_piece.baws": "Baws",
       "item.one_piece.straw_hat_helmet": "Straw Hat ",
       "gui.one_piece.snail_menu.receievernumber": "Number",
       "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
