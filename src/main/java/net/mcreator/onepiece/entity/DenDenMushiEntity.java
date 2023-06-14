@@ -54,7 +54,6 @@ import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.onepiece.procedures.DenDenMushiRightClickedOnEntityProcedure;
 import net.mcreator.onepiece.procedures.DenDenMushiOnInitialEntitySpawnProcedure;
-import net.mcreator.onepiece.procedures.DenDenMushiOnEntityTickUpdateProcedure;
 import net.mcreator.onepiece.init.OnePieceModEntities;
 
 import javax.annotation.Nullable;
@@ -174,7 +173,6 @@ public class DenDenMushiEntity extends PathfinderMob implements IAnimatable {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		DenDenMushiOnEntityTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

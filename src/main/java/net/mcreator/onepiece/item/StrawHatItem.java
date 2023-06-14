@@ -93,7 +93,7 @@ public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 		List<ItemStack> stackData = event.getExtraDataOfType(ItemStack.class);
 		LivingEntity livingEntity = event.getExtraDataOfType(LivingEntity.class).get(0);
 		if (this.animationprocedure.equals("empty")) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.straw_hat.idle", EDefaultLoopTypes.LOOP));
 			if (livingEntity instanceof ArmorStand) {
 				return PlayState.CONTINUE;
 			}

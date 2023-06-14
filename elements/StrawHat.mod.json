@@ -15,7 +15,7 @@
     },
     "armorTextureFile": "strawhatmapping.png",
     "model": "straw_hat.geo.json",
-    "idle": "idle",
+    "idle": "animation.straw_hat.idle",
     "head": "armorHead",
     "chest": "armorBody",
     "rightArm": "armorRightArm",
