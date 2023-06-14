@@ -14,7 +14,6 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.onepiece.world.inventory.SnailMenuMenu;
 import net.mcreator.onepiece.procedures.RenderSnailProcedure;
 import net.mcreator.onepiece.procedures.RenderRecieverProcedure;
-import net.mcreator.onepiece.procedures.RenderRecieverConditionProcedure;
 
 import java.util.HashMap;
 
@@ -28,6 +27,7 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 	private final Player entity;
 	EditBox receievernumber;
 	EditBox sendernumber;
+	EditBox message;
 
 	public SnailMenuScreen(SnailMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -49,12 +49,12 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 		this.renderTooltip(ms, mouseX, mouseY);
 		receievernumber.render(ms, mouseX, mouseY, partialTicks);
 		sendernumber.render(ms, mouseX, mouseY, partialTicks);
+		message.render(ms, mouseX, mouseY, partialTicks);
 		if (RenderSnailProcedure.execute(world, x, y, z) instanceof LivingEntity livingEntity) {
 			InventoryScreen.renderEntityInInventoryRaw(this.leftPos + 56, this.topPos + 89, 100, 0f + (float) Math.atan((this.leftPos + 56 - mouseX) / 40.0), (float) Math.atan((this.topPos + 39 - mouseY) / 40.0), livingEntity);
 		}
 		if (RenderRecieverProcedure.execute(world, x, y, z) instanceof LivingEntity livingEntity) {
-			if (RenderRecieverConditionProcedure.execute(entity))
-				InventoryScreen.renderEntityInInventoryRaw(this.leftPos + 197, this.topPos + 91, 100, 4.5f + (float) Math.atan((this.leftPos + 197 - mouseX) / 40.0), (float) Math.atan((this.topPos + 41 - mouseY) / 40.0), livingEntity);
+			InventoryScreen.renderEntityInInventoryRaw(this.leftPos + 197, this.topPos + 91, 100, 4.5f + (float) Math.atan((this.leftPos + 197 - mouseX) / 40.0), (float) Math.atan((this.topPos + 41 - mouseY) / 40.0), livingEntity);
 		}
 	}
 
@@ -78,6 +78,8 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 			return receievernumber.keyPressed(key, b, c);
 		if (sendernumber.isFocused())
 			return sendernumber.keyPressed(key, b, c);
+		if (message.isFocused())
+			return message.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
@@ -86,6 +88,7 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 		super.containerTick();
 		receievernumber.tick();
 		sendernumber.tick();
+		message.tick();
 	}
 
 	@Override
@@ -132,5 +135,31 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 		sendernumber.setMaxLength(32767);
 		guistate.put("text:sendernumber", sendernumber);
 		this.addWidget(this.sendernumber);
+		message = new EditBox(this.font, this.leftPos + 133, this.topPos + 128, 120, 20, Component.translatable("gui.one_piece.snail_menu.message")) {
+			{
+				setSuggestion(Component.translatable("gui.one_piece.snail_menu.message").getString());
+			}
+
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.one_piece.snail_menu.message").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.one_piece.snail_menu.message").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		message.setMaxLength(32767);
+		guistate.put("text:message", message);
+		this.addWidget(this.message);
 	}
 }

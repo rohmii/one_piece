@@ -51,14 +51,22 @@
           "entityModel": {
             "name": "RenderReciever"
           },
-          "displayCondition": {
-            "name": "RenderRecieverCondition"
-          },
           "scale": 100,
           "rotationX": 90,
           "followMouseMovement": true,
           "x": 268,
           "y": 107
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Message:",
+          "name": "message",
+          "width": 120,
+          "height": 20,
+          "x": 215,
+          "y": 165
         }
       }
     ],
