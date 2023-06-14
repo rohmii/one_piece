@@ -895,6 +895,22 @@
         ]
       },
       "path": "~/HUDs/DenDenMushi"
+    },
+    {
+      "name": "StrawHat",
+      "type": "animatedarmor",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "straw_hat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java",
+          "src/main/java/net/mcreator/onepiece/item/StrawHatItem.java",
+          "src/main/resources/assets/one_piece/models/item/straw_hat_helmet.json",
+          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -919,11 +935,20 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "strawhatequip",
+      "files": [
+        "hay-sound-effect_ahrfaos0"
+      ],
+      "category": "neutral",
+      "subtitle": "strawhat"
     }
   ],
   "language_map": {
     "en_us": {
       "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
+      "subtitles.strawhatequip": "strawhat",
       "key.one_piece.primary": "Primary",
       "key.one_piece.tertiary": "Tertiary",
       "subtitles.overtaken": "",
