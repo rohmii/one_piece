@@ -36,10 +36,10 @@ public class SnailMenuWhileThisGUIIsOpenTickProcedure {
 							if ((guistate.containsKey("text:receievernumber") ? ((EditBox) guistate.get("text:receievernumber")).getValue() : "").equals(entityiterator.getPersistentData().getString("sendernumber"))) {
 								if (!world.isClientSide() && world.getServer() != null)
 									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("SNAIL FOUND"), false);
+								entity.getPersistentData().putBoolean("callerfound", true);
 								entity.getPersistentData().putDouble("recieverx", (entityiterator.getX()));
 								entity.getPersistentData().putDouble("recieverx", (entityiterator.getY()));
 								entity.getPersistentData().putDouble("recieverz", (entityiterator.getZ()));
-								entity.getPersistentData().putBoolean("callerfound", true);
 							} else {
 								entity.getPersistentData().putBoolean("callerfound", false);
 							}
