@@ -883,10 +883,16 @@
       "locked_code": false,
       "registry_name": "render_reciever_condition",
       "metadata": {
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/onepiece/procedures/RenderRecieverConditionProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/HUDs/DenDenMushi"
     }

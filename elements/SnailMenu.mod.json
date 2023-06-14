@@ -52,7 +52,7 @@
             "name": "RenderSnail"
           },
           "scale": 100,
-          "rotationX": 180,
+          "rotationX": 270,
           "followMouseMovement": true,
           "x": 268,
           "y": 107
