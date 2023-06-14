@@ -968,9 +968,21 @@
     {
       "name": "Booba",
       "type": "painting",
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "booba",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Wanted1",
+      "type": "painting",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wanted_1",
       "metadata": {
         "files": []
       }
