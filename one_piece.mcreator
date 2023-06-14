@@ -923,6 +923,10 @@
             "type": "entity"
           },
           {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -941,6 +945,25 @@
         ]
       },
       "path": "~/HUDs/DenDenMushi"
+    },
+    {
+      "name": "DenDenMushiOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "den_den_mushi_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/DenDenMushiOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

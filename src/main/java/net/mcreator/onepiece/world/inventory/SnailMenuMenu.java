@@ -61,7 +61,7 @@ public class SnailMenuMenu extends AbstractContainerMenu implements Supplier<Map
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		SnailMenuThisGUIIsClosedProcedure.execute(world, x, y, z, entity);
+		SnailMenuThisGUIIsClosedProcedure.execute(world, x, y, z, entity, guistate);
 	}
 
 	public Map<Integer, Slot> get() {
