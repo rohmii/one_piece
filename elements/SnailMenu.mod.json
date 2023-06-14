@@ -52,7 +52,7 @@
             "name": "RenderReciever"
           },
           "scale": 100,
-          "rotationX": 90,
+          "rotationX": 45,
           "followMouseMovement": true,
           "x": 268,
           "y": 107

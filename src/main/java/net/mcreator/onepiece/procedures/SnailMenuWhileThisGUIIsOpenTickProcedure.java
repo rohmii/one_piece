@@ -4,6 +4,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.components.EditBox;
 
 import net.mcreator.onepiece.entity.DenDenMushiEntity;
@@ -39,6 +40,8 @@ public class SnailMenuWhileThisGUIIsOpenTickProcedure {
 								.equals(guistate.containsKey("text:sendernumber") ? ((EditBox) guistate.get("text:sendernumber")).getValue() : "")) {
 							if ((guistate.containsKey("text:receievernumber") ? ((EditBox) guistate.get("text:receievernumber")).getValue() : "").equals(entityiterator.getPersistentData().getString("sendernumber"))) {
 								entity.getPersistentData().putBoolean("callerfound", true);
+								if (!world.isClientSide() && world.getServer() != null)
+									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("callerfound"), false);
 							} else {
 								entity.getPersistentData().putBoolean("callerfound", false);
 							}
