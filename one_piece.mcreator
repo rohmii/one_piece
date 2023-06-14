@@ -883,16 +883,10 @@
       "locked_code": false,
       "registry_name": "render_reciever_condition",
       "metadata": {
-        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/onepiece/procedures/RenderRecieverConditionProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/HUDs/DenDenMushi"
     },
@@ -911,6 +905,46 @@
           "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java"
         ]
       }
+    },
+    {
+      "name": "SnailMenuThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snail_menu_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SnailMenuThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HUDs/DenDenMushi"
     }
   ],
   "variable_elements": [
@@ -957,6 +991,7 @@
       "item.one_piece.overtaken": "Music Disc",
       "item.one_piece.overtaken.desc": "Overtaken OST",
       "item.one_piece.straw_hat_chestplate": "elementgui.armor.body",
+      "gui.one_piece.snail_menu.message": "Message:",
       "gui.one_piece.snail_menu.label_empty": "Your Number:",
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "key.one_piece.secondary": "Secondary",
