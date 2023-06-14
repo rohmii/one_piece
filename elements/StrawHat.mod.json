@@ -44,7 +44,7 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "fullyEquipped": false,
+    "fullyEquipped": true,
     "maxDamage": 0,
     "damageValueHelmet": 2,
     "damageValueBody": 0,
