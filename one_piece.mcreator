@@ -686,16 +686,16 @@
       "name": "DenDenMushi",
       "type": "animatedentity",
       "sortid": 34,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "den_den_mushi",
       "metadata": {
         "files": [
           "src/main/resources/data/one_piece/forge/biome_modifier/den_den_mushi_biome_modifier.json",
-          "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java",
+          "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json",
           "src/main/java/net/mcreator/onepiece/client/renderer/DenDenMushiRenderer.java",
           "src/main/java/net/mcreator/onepiece/entity/model/DenDenMushiModel.java",
-          "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json"
+          "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java"
         ]
       }
     },
@@ -742,46 +742,6 @@
         "files": [
           "src/main/java/net/mcreator/onepiece/client/gui/SnailMenuScreen.java",
           "src/main/java/net/mcreator/onepiece/world/inventory/SnailMenuMenu.java"
-        ]
-      },
-      "path": "~/HUDs/DenDenMushi"
-    },
-    {
-      "name": "DenDenMushiRightClickedOnEntity",
-      "type": "procedure",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "den_den_mushi_right_clicked_on_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/onepiece/procedures/DenDenMushiRightClickedOnEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/HUDs/DenDenMushi"
@@ -1004,6 +964,46 @@
           "src/main/resources/assets/one_piece/models/item/baws.json"
         ]
       }
+    },
+    {
+      "name": "DenDenRightClicked",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "den_den_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/DenDenRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HUDs/DenDenMushi"
     }
   ],
   "variable_elements": [
