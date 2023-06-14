@@ -19,6 +19,8 @@ public class SnailMenuThisGUIIsClosedProcedure {
 		if (entity == null || guistate == null)
 			return;
 		if (!(guistate.containsKey("text:receievernumber") ? ((EditBox) guistate.get("text:receievernumber")).getValue() : "").equals("")) {
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("recievenumber full"), false);
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(20 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
@@ -27,8 +29,14 @@ public class SnailMenuThisGUIIsClosedProcedure {
 					if (entityiterator instanceof DenDenMushiEntity) {
 						if (!(guistate.containsKey("text:receievernumber") ? ((EditBox) guistate.get("text:receievernumber")).getValue() : "")
 								.equals(guistate.containsKey("text:sendernumber") ? ((EditBox) guistate.get("text:sendernumber")).getValue() : "")) {
+							if (!world.isClientSide() && world.getServer() != null)
+								world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("recievenumber correct"), false);
 							if (entity.getPersistentData().getBoolean("callerfound") == true) {
+								if (!world.isClientSide() && world.getServer() != null)
+									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("callerfound"), false);
 								entityiterator.setCustomName(Component.literal((guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : "")));
+								if (!world.isClientSide() && world.getServer() != null)
+									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : "")), false);
 							}
 						}
 					}
