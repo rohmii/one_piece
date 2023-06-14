@@ -151,7 +151,7 @@ public class DenDenMushiEntity extends PathfinderMob implements IAnimatable {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		DenDenMushiOnInitialEntitySpawnProcedure.execute(world, this);
+		DenDenMushiOnInitialEntitySpawnProcedure.execute(this);
 		return retval;
 	}
 
