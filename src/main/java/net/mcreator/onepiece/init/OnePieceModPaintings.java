@@ -14,5 +14,5 @@ import net.mcreator.onepiece.OnePieceMod;
 
 public class OnePieceModPaintings {
 	public static final DeferredRegister<PaintingVariant> REGISTRY = DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, OnePieceMod.MODID);
-	public static final RegistryObject<PaintingVariant> BOOBA = REGISTRY.register("booba", () -> new PaintingVariant(64, 64));
+	public static final RegistryObject<PaintingVariant> BOOBA = REGISTRY.register("booba", () -> new PaintingVariant(32, 32));
 }
