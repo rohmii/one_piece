@@ -16,6 +16,7 @@ public class DenDenMushiOnEntityTickUpdateProcedure {
 						entity.getPersistentData().putDouble("typecounter", 0);
 					} else {
 						entity.getPersistentData().putBoolean("start_call", false);
+						entity.getPersistentData().putString("currentmessage", "");
 					}
 				} else {
 					entity.getPersistentData().putDouble("typecounter", (entity.getPersistentData().getDouble("typecounter") + 1));
