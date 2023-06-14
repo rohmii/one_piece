@@ -846,7 +846,7 @@
       "name": "RenderReciever",
       "type": "procedure",
       "sortid": 39,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "render_reciever",
       "metadata": {
@@ -900,7 +900,7 @@
       "name": "StrawHat",
       "type": "animatedarmor",
       "sortid": 39,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "straw_hat",
       "metadata": {
