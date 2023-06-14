@@ -686,7 +686,7 @@
       "name": "DenDenMushi",
       "type": "animatedentity",
       "sortid": 34,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "den_den_mushi",
       "metadata": {
