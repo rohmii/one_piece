@@ -18,29 +18,24 @@ import net.mcreator.onepiece.world.inventory.SnailMenuMenu;
 import io.netty.buffer.Unpooled;
 
 public class DenDenRightClickedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity) {
+		if (sourceentity == null)
 			return;
-		if ((entity.getPersistentData().getString("currentmessage")).isEmpty()) {
-			{
-				if (sourceentity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = new BlockPos(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("SnailMenu");
-						}
+		{
+			if (sourceentity instanceof ServerPlayer _ent) {
+				BlockPos _bpos = new BlockPos(x, y, z);
+				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("SnailMenu");
+					}
 
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new SnailMenuMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
-				}
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						return new SnailMenuMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					}
+				}, _bpos);
 			}
-			entity.getPersistentData().putBoolean("start_call", false);
-		} else {
-			entity.getPersistentData().putBoolean("start_call", true);
 		}
 	}
 }

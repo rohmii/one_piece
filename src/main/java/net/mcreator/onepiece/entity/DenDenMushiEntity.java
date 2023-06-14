@@ -167,7 +167,7 @@ public class DenDenMushiEntity extends PathfinderMob implements IAnimatable {
 		Entity entity = this;
 		Level world = this.level;
 
-		DenDenRightClickedProcedure.execute(world, x, y, z, entity, sourceentity);
+		DenDenRightClickedProcedure.execute(world, x, y, z, sourceentity);
 		return retval;
 	}
 
