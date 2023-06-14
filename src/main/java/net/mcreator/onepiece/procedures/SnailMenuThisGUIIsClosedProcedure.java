@@ -27,10 +27,11 @@ public class SnailMenuThisGUIIsClosedProcedure {
 						if (entity.getPersistentData().getBoolean("callerfound") == true) {
 							if (!world.isClientSide() && world.getServer() != null)
 								world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("caller has been found"), false);
-							entityiterator.getPersistentData().putString("currentmessage", (guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : ""));
 							if (!world.isClientSide() && world.getServer() != null)
 								world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : "")), false);
 							entityiterator.getPersistentData().putDouble("type", 0);
+							entityiterator.getPersistentData().putDouble("typecounter", 0);
+							entityiterator.getPersistentData().putString("currentmessage", (guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : ""));
 						}
 					}
 				}
