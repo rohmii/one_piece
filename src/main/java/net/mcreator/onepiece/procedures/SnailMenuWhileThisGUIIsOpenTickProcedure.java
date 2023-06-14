@@ -30,7 +30,11 @@ public class SnailMenuWhileThisGUIIsOpenTickProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof DenDenMushiEntity) {
 					if ((guistate.containsKey("text:receievernumber") ? ((EditBox) guistate.get("text:receievernumber")).getValue() : "")
-							.equals(entityiterator.getPersistentData().getString((guistate.containsKey("text:sendernumber") ? ((EditBox) guistate.get("text:sendernumber")).getValue() : "")))) {
+							.equals(((Entity) world.getEntitiesOfClass(DenDenMushiEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("sendernumber"))) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("SNAIL FOUND"), false);
 					}
