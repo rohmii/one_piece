@@ -26,7 +26,7 @@ public class SnailMenuThisGUIIsClosedProcedure {
 					if (!(entityiterator.getPersistentData().getString("sendernumber")).equals(entity.getPersistentData().getString("receievernumber"))) {
 						if (!(entity.getPersistentData().getString("sendernumber")).equals(entity.getPersistentData().getString("sendernumber"))) {
 							if (entity.getPersistentData().getBoolean("callerfound") == true) {
-								entity.getPersistentData().putString("currentmessage", (entity.getPersistentData().getString("message")));
+								entityiterator.getPersistentData().putString("currentmessage", (entity.getPersistentData().getString("message")));
 							}
 						}
 					}
