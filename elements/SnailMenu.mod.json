@@ -51,9 +51,6 @@
           "entityModel": {
             "name": "RenderSnail"
           },
-          "displayCondition": {
-            "name": "RenderRecieverCondition"
-          },
           "scale": 100,
           "rotationX": 180,
           "followMouseMovement": true,
