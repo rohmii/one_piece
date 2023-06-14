@@ -49,10 +49,13 @@
         "type": "entitymodel",
         "data": {
           "entityModel": {
-            "name": "RenderSnail"
+            "name": "RenderReciever"
+          },
+          "displayCondition": {
+            "name": "RenderRecieverCondition"
           },
           "scale": 100,
-          "rotationX": 270,
+          "rotationX": 90,
           "followMouseMovement": true,
           "x": 268,
           "y": 107
