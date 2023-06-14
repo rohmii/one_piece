@@ -964,6 +964,16 @@
           }
         ]
       }
+    },
+    {
+      "name": "Booba",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "booba",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
