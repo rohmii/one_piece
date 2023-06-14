@@ -692,10 +692,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/one_piece/forge/biome_modifier/den_den_mushi_biome_modifier.json",
-          "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json",
+          "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java",
           "src/main/java/net/mcreator/onepiece/client/renderer/DenDenMushiRenderer.java",
           "src/main/java/net/mcreator/onepiece/entity/model/DenDenMushiModel.java",
-          "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java"
+          "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json"
         ]
       }
     },
