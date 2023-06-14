@@ -795,6 +795,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "guistate",
             "type": "map"
           },
@@ -833,6 +837,56 @@
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs/DenDenMushi"
+    },
+    {
+      "name": "RenderReciever",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_reciever",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/RenderRecieverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HUDs/DenDenMushi"
+    },
+    {
+      "name": "RenderRecieverCondition",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_reciever_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/RenderRecieverConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
