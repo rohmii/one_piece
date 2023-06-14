@@ -33,10 +33,14 @@ public class SnailMenuWhileThisGUIIsOpenTickProcedure {
 						if (!(guistate.containsKey("text:receievernumber") ? ((EditBox) guistate.get("text:receievernumber")).getValue() : "")
 								.equals(guistate.containsKey("text:sendernumber") ? ((EditBox) guistate.get("text:sendernumber")).getValue() : "")) {
 							if ((guistate.containsKey("text:receievernumber") ? ((EditBox) guistate.get("text:receievernumber")).getValue() : "").equals(entityiterator.getPersistentData().getString("sendernumber"))) {
+								entity.getPersistentData().putString("recievernumber", (((Entity) world.getEntitiesOfClass(DenDenMushiEntity.class, AABB.ofSize(new Vec3(x, y, z), 20, 20, 20), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("sendernumber")));
+								entity.getPersistentData().putString("sendernumber", (entityiterator.getPersistentData().getString("sendernumber")));
+								entity.getPersistentData().putString("message", (guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : ""));
 								entity.getPersistentData().putBoolean("callerfound", true);
-								entity.getPersistentData().putDouble("recieverx", (entityiterator.getX()));
-								entity.getPersistentData().putDouble("recieverx", (entityiterator.getY()));
-								entity.getPersistentData().putDouble("recieverz", (entityiterator.getZ()));
 							} else {
 								entity.getPersistentData().putBoolean("callerfound", false);
 							}

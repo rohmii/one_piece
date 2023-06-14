@@ -73,6 +73,9 @@
     "onTick": {
       "name": "SnailMenuWhileThisGUIIsOpenTick"
     },
+    "onClosed": {
+      "name": "SnailMenuThisGUIIsClosed"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

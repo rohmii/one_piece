@@ -923,10 +923,6 @@
             "type": "entity"
           },
           {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
             "name": "x",
             "type": "number"
           },
