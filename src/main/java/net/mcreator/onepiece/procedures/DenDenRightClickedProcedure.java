@@ -17,7 +17,7 @@ import net.mcreator.onepiece.world.inventory.SnailMenuMenu;
 
 import io.netty.buffer.Unpooled;
 
-public class DenDenMushiRightClickedOnEntityProcedure {
+public class DenDenRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity) {
 		if (sourceentity == null)
 			return;

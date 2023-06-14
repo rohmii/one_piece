@@ -52,7 +52,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.onepiece.procedures.DenDenMushiRightClickedOnEntityProcedure;
+import net.mcreator.onepiece.procedures.DenDenRightClickedProcedure;
 import net.mcreator.onepiece.procedures.DenDenMushiOnInitialEntitySpawnProcedure;
 import net.mcreator.onepiece.procedures.DenDenMushiOnEntityTickUpdateProcedure;
 import net.mcreator.onepiece.init.OnePieceModEntities;
@@ -167,7 +167,7 @@ public class DenDenMushiEntity extends PathfinderMob implements IAnimatable {
 		Entity entity = this;
 		Level world = this.level;
 
-		DenDenMushiRightClickedOnEntityProcedure.execute(world, x, y, z, sourceentity);
+		DenDenRightClickedProcedure.execute(world, x, y, z, sourceentity);
 		return retval;
 	}
 
