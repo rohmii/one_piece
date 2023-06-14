@@ -44,6 +44,19 @@
           "x": 89,
           "y": 43
         }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "RenderSnail"
+          },
+          "scale": 100,
+          "rotationX": 180,
+          "followMouseMovement": true,
+          "x": 268,
+          "y": 107
+        }
       }
     ],
     "onTick": {

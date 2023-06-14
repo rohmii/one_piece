@@ -841,6 +841,54 @@
           "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java"
         ]
       }
+    },
+    {
+      "name": "RenderRecieverCondition",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_reciever_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/RenderRecieverConditionProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/HUDs/DenDenMushi"
+    },
+    {
+      "name": "RenderReciever",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_reciever",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/RenderRecieverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HUDs/DenDenMushi"
     }
   ],
   "variable_elements": [
@@ -882,15 +930,11 @@
       "key.one_piece.primary": "Primary",
       "key.one_piece.tertiary": "Tertiary",
       "subtitles.overtaken": "",
-      "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
-      "item.one_piece.straw_hat_boots": "Straw Hat Boots",
       "item.one_piece.overtaken": "Music Disc",
       "item.one_piece.overtaken.desc": "Overtaken OST",
-      "item.one_piece.straw_hat_chestplate": "elementgui.armor.body",
       "gui.one_piece.snail_menu.label_empty": "Your Number:",
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "key.one_piece.secondary": "Secondary",
-      "item.one_piece.straw_hat_helmet": "Straw Hat ",
       "gui.one_piece.snail_menu.receievernumber": "Number",
       "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
       "gui.one_piece.snail_menu.sendernumber": ""

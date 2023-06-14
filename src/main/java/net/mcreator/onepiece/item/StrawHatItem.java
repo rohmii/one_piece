@@ -1,34 +1,13 @@
 
 package net.mcreator.onepiece.item;
 
-import software.bernie.geckolib3.util.GeckoLibUtil;
-import software.bernie.geckolib3.item.GeoArmorItem;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import javax.annotation.Nullable;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.decoration.ArmorStand;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
+import java.util.function.Consumer;
+import net.minecraft.client.model.Model;
 
 public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
@@ -94,9 +73,11 @@ public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 		LivingEntity livingEntity = event.getExtraDataOfType(LivingEntity.class).get(0);
 		if (this.animationprocedure.equals("empty")) {
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
+
 			if (livingEntity instanceof ArmorStand) {
 				return PlayState.CONTINUE;
 			}
+
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
@@ -113,9 +94,11 @@ public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 				this.animationprocedure = "empty";
 				event.getController().markNeedsReload();
 			}
+
 			if (livingEntity instanceof ArmorStand) {
 				return PlayState.CONTINUE;
 			}
+
 			return PlayState.CONTINUE;
 		}
 		return PlayState.CONTINUE;
@@ -131,4 +114,5 @@ public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 	public AnimationFactory getFactory() {
 		return this.factory;
 	}
+
 }

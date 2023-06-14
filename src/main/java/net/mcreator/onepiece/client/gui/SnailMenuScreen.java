@@ -50,6 +50,9 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 		if (RenderSnailProcedure.execute(world, x, y, z) instanceof LivingEntity livingEntity) {
 			InventoryScreen.renderEntityInInventoryRaw(this.leftPos + 56, this.topPos + 89, 100, 0f + (float) Math.atan((this.leftPos + 56 - mouseX) / 40.0), (float) Math.atan((this.topPos + 39 - mouseY) / 40.0), livingEntity);
 		}
+		if (RenderSnailProcedure.execute(world, x, y, z) instanceof LivingEntity livingEntity) {
+			InventoryScreen.renderEntityInInventoryRaw(this.leftPos + 197, this.topPos + 91, 100, 9f + (float) Math.atan((this.leftPos + 197 - mouseX) / 40.0), (float) Math.atan((this.topPos + 41 - mouseY) / 40.0), livingEntity);
+		}
 	}
 
 	@Override
