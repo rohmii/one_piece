@@ -20,7 +20,7 @@
           "rotationX": 0,
           "followMouseMovement": true,
           "x": 125,
-          "y": 92
+          "y": 104
         }
       },
       {
@@ -30,23 +30,19 @@
           "name": "receievernumber",
           "width": 120,
           "height": 20,
-          "x": 89,
-          "y": 139
+          "x": 88,
+          "y": 166
         }
       },
       {
-        "type": "label",
+        "type": "textfield",
         "data": {
-          "name": "label_empty",
-          "text": {
-            "fixedValue": "Your Number:"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 91,
-          "y": 45
+          "placeholder": "",
+          "name": "sendernumber",
+          "width": 120,
+          "height": 20,
+          "x": 89,
+          "y": 43
         }
       }
     ],

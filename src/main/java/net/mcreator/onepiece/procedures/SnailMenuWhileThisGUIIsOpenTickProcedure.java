@@ -10,6 +10,6 @@ public class SnailMenuWhileThisGUIIsOpenTickProcedure {
 		if (entity == null || guistate == null)
 			return;
 		if (guistate.get("text:sendernumber") instanceof EditBox _tf)
-			_tf.setValue((entity.getPersistentData().getString("sendernumber")));
+			_tf.setValue(("Number - " + entity.getPersistentData().getString((entity.getPersistentData().getString("sendernumber")))));
 	}
 }

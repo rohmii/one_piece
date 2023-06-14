@@ -1,13 +1,14 @@
 {
   "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
-  "entity.one_piece.den_den_mushi": "Den Den Mushi",
-  "key.one_piece.secondary": "Secondary",
   "key.one_piece.primary": "Primary",
   "key.one_piece.tertiary": "Tertiary",
   "subtitles.overtaken": "",
   "item.one_piece.overtaken": "Music Disc",
-  "gui.one_piece.snail_menu.receievernumber": "Number",
   "item.one_piece.overtaken.desc": "Overtaken OST",
   "gui.one_piece.snail_menu.label_empty": "Your Number:",
-  "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg"
+  "entity.one_piece.den_den_mushi": "Den Den Mushi",
+  "key.one_piece.secondary": "Secondary",
+  "gui.one_piece.snail_menu.receievernumber": "Number",
+  "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
+  "gui.one_piece.snail_menu.sendernumber": ""
 }
