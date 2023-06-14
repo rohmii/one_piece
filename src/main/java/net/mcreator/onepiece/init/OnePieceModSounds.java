@@ -17,4 +17,5 @@ public class OnePieceModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, OnePieceMod.MODID);
 	public static final RegistryObject<SoundEvent> OVERTAKEN = REGISTRY.register("overtaken", () -> new SoundEvent(new ResourceLocation("one_piece", "overtaken")));
 	public static final RegistryObject<SoundEvent> STRAWHATEQUIP = REGISTRY.register("strawhatequip", () -> new SoundEvent(new ResourceLocation("one_piece", "strawhatequip")));
+	public static final RegistryObject<SoundEvent> WEEWEE = REGISTRY.register("weewee", () -> new SoundEvent(new ResourceLocation("one_piece", "weewee")));
 }
