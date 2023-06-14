@@ -698,6 +698,132 @@
           "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java"
         ]
       }
+    },
+    {
+      "name": "RenderSnail",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_snail",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/RenderSnailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SnailMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snail_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/client/gui/SnailMenuScreen.java",
+          "src/main/java/net/mcreator/onepiece/world/inventory/SnailMenuMenu.java"
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "DenDenMushiRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "den_den_mushi_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/DenDenMushiRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "SnailMenuWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snail_menu_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SnailMenuWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "DenDenMushiOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "den_den_mushi_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/DenDenMushiOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -733,7 +859,9 @@
       "key.one_piece.tertiary": "Tertiary",
       "subtitles.overtaken": "",
       "item.one_piece.overtaken": "Music Disc",
+      "gui.one_piece.snail_menu.receievernumber": "Number",
       "item.one_piece.overtaken.desc": "Overtaken OST",
+      "gui.one_piece.snail_menu.label_empty": "Your Number:",
       "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg"
     }
   },

@@ -1,0 +1,64 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 263,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "RenderSnail"
+          },
+          "scale": 100,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 125,
+          "y": 92
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Number",
+          "name": "receievernumber",
+          "width": 120,
+          "height": 20,
+          "x": 89,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "Your Number:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 45
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SnailMenuWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

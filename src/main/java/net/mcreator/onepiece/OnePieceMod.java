@@ -32,6 +32,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.onepiece.init.OnePieceModSounds;
+import net.mcreator.onepiece.init.OnePieceModMenus;
 import net.mcreator.onepiece.init.OnePieceModItems;
 import net.mcreator.onepiece.init.OnePieceModEntities;
 
@@ -57,6 +58,8 @@ public class OnePieceMod {
 
 		OnePieceModItems.REGISTRY.register(bus);
 		OnePieceModEntities.REGISTRY.register(bus);
+
+		OnePieceModMenus.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}
