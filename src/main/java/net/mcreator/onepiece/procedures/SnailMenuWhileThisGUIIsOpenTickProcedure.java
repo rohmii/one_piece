@@ -39,6 +39,9 @@ public class SnailMenuWhileThisGUIIsOpenTickProcedure {
 								entity.getPersistentData().putDouble("recieverx", (entityiterator.getX()));
 								entity.getPersistentData().putDouble("recieverx", (entityiterator.getY()));
 								entity.getPersistentData().putDouble("recieverz", (entityiterator.getZ()));
+								entity.getPersistentData().putBoolean("callerfound", true);
+							} else {
+								entity.getPersistentData().putBoolean("callerfound", false);
 							}
 						}
 					}
