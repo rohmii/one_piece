@@ -9,7 +9,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.onepiece.item.StrawHatItem;
+import net.mcreator.onepiece.item.PortgasDAceHatItem;
 import net.mcreator.onepiece.client.renderer.StrawHatArmorRenderer;
+import net.mcreator.onepiece.client.renderer.PortgasDAceHatArmorRenderer;
 import net.mcreator.onepiece.OnePieceMod;
 
 @Mod.EventBusSubscriber(modid = OnePieceMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -18,5 +20,6 @@ public class OnePieceModGeckoLibArmors {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.AddLayers event) {
 		GeoArmorRenderer.registerArmorRenderer(StrawHatItem.class, () -> new StrawHatArmorRenderer());
+		GeoArmorRenderer.registerArmorRenderer(PortgasDAceHatItem.class, () -> new PortgasDAceHatArmorRenderer());
 	}
 }
