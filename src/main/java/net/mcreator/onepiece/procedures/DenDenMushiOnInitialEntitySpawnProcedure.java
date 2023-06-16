@@ -6,6 +6,6 @@ public class DenDenMushiOnInitialEntitySpawnProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.getPersistentData().putString("sendernumber", (Math.round(Math.random() * 10000) + ""));
+		entity.getPersistentData().putString("number", (Math.round(Math.random() * 100000) + ""));
 	}
 }

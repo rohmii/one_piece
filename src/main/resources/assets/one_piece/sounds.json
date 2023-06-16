@@ -16,15 +16,6 @@
       }
     ]
   },
-  "weewee": {
-    "subtitle": "subtitles.weewee",
-    "sounds": [
-      {
-        "name": "one_piece:can-i-put-my-balls-in-your-jaws",
-        "stream": true
-      }
-    ]
-  },
   "dendenmushiringtone": {
     "subtitle": "subtitles.dendenmushiringtone",
     "sounds": [

@@ -99,6 +99,9 @@
     "stepSound": {
       "value": ""
     },
+    "onRightClickedOn": {
+      "name": "DenDenRightClicked"
+    },
     "onInitialSpawn": {
       "name": "DenDenMushiOnInitialEntitySpawn"
     },

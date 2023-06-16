@@ -17,7 +17,6 @@ import net.mcreator.onepiece.item.StrawHatItem;
 import net.mcreator.onepiece.item.PortgasDAceHatItem;
 import net.mcreator.onepiece.item.OvertakenItem;
 import net.mcreator.onepiece.item.ChopChopFruitItem;
-import net.mcreator.onepiece.item.BawsItem;
 import net.mcreator.onepiece.OnePieceMod;
 
 public class OnePieceModItems {
@@ -28,7 +27,6 @@ public class OnePieceModItems {
 			() -> new ForgeSpawnEggItem(OnePieceModEntities.DEN_DEN_MUSHI, -331793, -3356246, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<StrawHatItem> STRAW_HAT_HELMET = REGISTRY.register("straw_hat_helmet", () -> new StrawHatItem(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
-	public static final RegistryObject<Item> BAWS = REGISTRY.register("baws", () -> new BawsItem());
 	public static final RegistryObject<PortgasDAceHatItem> PORTGAS_D_ACE_HAT_HELMET = REGISTRY.register("portgas_d_ace_hat_helmet", () -> new PortgasDAceHatItem(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
 }

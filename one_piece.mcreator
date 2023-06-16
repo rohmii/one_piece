@@ -681,7 +681,8 @@
           "src/main/java/net/mcreator/onepiece/entity/model/DenDenMushiModel.java",
           "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java"
         ]
-      }
+      },
+      "path": "~/DenDenMushi"
     },
     {
       "name": "RenderSnail",
@@ -714,7 +715,7 @@
           }
         ]
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "SnailMenu",
@@ -728,7 +729,7 @@
           "src/main/java/net/mcreator/onepiece/world/inventory/SnailMenuMenu.java"
         ]
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "SnailMenuWhileThisGUIIsOpenTick",
@@ -742,10 +743,6 @@
           "src/main/java/net/mcreator/onepiece/procedures/SnailMenuWhileThisGUIIsOpenTickProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "guistate",
             "type": "map"
@@ -768,7 +765,7 @@
           }
         ]
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "DenDenMushiOnInitialEntitySpawn",
@@ -788,7 +785,7 @@
           }
         ]
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "RenderReciever",
@@ -821,7 +818,7 @@
           }
         ]
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "RenderRecieverCondition",
@@ -836,7 +833,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "StrawHat",
@@ -892,7 +889,7 @@
           }
         ]
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "DenDenMushiOnEntityTickUpdate",
@@ -911,7 +908,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/DenDenMushi"
     },
     {
       "name": "Wanted1",
@@ -922,20 +920,6 @@
       "registry_name": "wanted_1",
       "metadata": {
         "files": []
-      }
-    },
-    {
-      "name": "Baws",
-      "type": "musicdisc",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baws",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/onepiece/item/BawsItem.java",
-          "src/main/resources/assets/one_piece/models/item/baws.json"
-        ]
       }
     },
     {
@@ -972,7 +956,7 @@
           }
         ]
       },
-      "path": "~/HUDs/DenDenMushi"
+      "path": "~/DenDenMushi"
     },
     {
       "name": "TertiaryBar5",
@@ -1170,14 +1154,6 @@
       "subtitle": "strawhat"
     },
     {
-      "name": "weewee",
-      "files": [
-        "can-i-put-my-balls-in-your-jaws"
-      ],
-      "category": "record",
-      "subtitle": "Can I?"
-    },
-    {
       "name": "dendenmushiringtone",
       "files": [
         "ringtone-den-den-mushi-bere-bere-bere_5tco5psj"
@@ -1188,13 +1164,11 @@
   ],
   "language_map": {
     "en_us": {
-      "item.one_piece.baws.desc": "Can I?",
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
       "item.one_piece.overtaken": "Music Disc",
       "item.one_piece.portgas_d_ace_hat_helmet": "Portgas D Ace\u0027s Hat ",
       "item.one_piece.overtaken.desc": "Overtaken OST",
       "key.one_piece.secondary": "Secondary",
-      "item.one_piece.baws": "Baws",
       "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
       "gui.one_piece.snail_menu.sendernumber": "",
       "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
@@ -1221,12 +1195,7 @@
     "children": [
       {
         "name": "HUDs",
-        "children": [
-          {
-            "name": "DenDenMushi",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Bara",
@@ -1234,6 +1203,10 @@
       },
       {
         "name": "DevilFruits",
+        "children": []
+      },
+      {
+        "name": "DenDenMushi",
         "children": []
       }
     ]
