@@ -219,7 +219,103 @@
         "data": {
           "image": "power_bar_0.png",
           "use1Xscale": false,
-          "x": 352,
+          "x": 350,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bara_tertiary.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BaraDisplayCondition"
+          },
+          "x": 351,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TertiaryBar1"
+          },
+          "x": 350,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TertiaryBar2"
+          },
+          "x": 350,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TertiaryBar3"
+          },
+          "x": 350,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TertiaryBar4"
+          },
+          "x": 350,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TertiaryBar5"
+          },
+          "x": 350,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TertiaryBar6"
+          },
+          "x": 350,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "power_bar_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TertiaryBar7"
+          },
+          "x": 350,
           "y": 97
         }
       }

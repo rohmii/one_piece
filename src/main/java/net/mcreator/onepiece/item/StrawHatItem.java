@@ -29,8 +29,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
@@ -95,20 +93,11 @@ public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 		List<ItemStack> stackData = event.getExtraDataOfType(ItemStack.class);
 		LivingEntity livingEntity = event.getExtraDataOfType(LivingEntity.class).get(0);
 		if (this.animationprocedure.equals("empty")) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.straw_hat.idle", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.den_den_mushi.animation.idle", EDefaultLoopTypes.LOOP));
 			if (livingEntity instanceof ArmorStand) {
 				return PlayState.CONTINUE;
 			}
-			List<Item> armorList = new ArrayList<>(4);
-			for (EquipmentSlot slot : EquipmentSlot.values()) {
-				if (slot.getType() == EquipmentSlot.Type.ARMOR) {
-					if (livingEntity.getItemBySlot(slot) != null) {
-						armorList.add(livingEntity.getItemBySlot(slot).getItem());
-					}
-				}
-			}
-			boolean isWearingAll = armorList.containsAll(Arrays.asList());
-			return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
+			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
 	}
@@ -127,16 +116,7 @@ public class StrawHatItem extends GeoArmorItem implements IAnimatable {
 			if (livingEntity instanceof ArmorStand) {
 				return PlayState.CONTINUE;
 			}
-			List<Item> armorList = new ArrayList<>(4);
-			for (EquipmentSlot slot : EquipmentSlot.values()) {
-				if (slot.getType() == EquipmentSlot.Type.ARMOR) {
-					if (livingEntity.getItemBySlot(slot) != null) {
-						armorList.add(livingEntity.getItemBySlot(slot).getItem());
-					}
-				}
-			}
-			boolean isWearingAll = armorList.containsAll(Arrays.asList());
-			return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
+			return PlayState.CONTINUE;
 		}
 		return PlayState.CONTINUE;
 	}

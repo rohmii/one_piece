@@ -243,7 +243,7 @@
       "type": "overlay",
       "sortid": 12,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "devil_fruit_hud",
       "metadata": {
         "files": [
@@ -863,10 +863,10 @@
       "registry_name": "straw_hat",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java",
           "src/main/java/net/mcreator/onepiece/item/StrawHatItem.java",
           "src/main/resources/assets/one_piece/models/item/straw_hat_helmet.json",
-          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java",
-          "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java"
+          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java"
         ]
       }
     },
@@ -1000,6 +1000,153 @@
         ]
       },
       "path": "~/HUDs/DenDenMushi"
+    },
+    {
+      "name": "TertiaryBar1",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "TertiaryBar2",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "TertiaryBar3",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "TertiaryBar4",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "TertiaryBar5",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "TertiaryBar6",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
+    },
+    {
+      "name": "TertiaryBar7",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/TertiaryBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HUDs"
     }
   ],
   "variable_elements": [

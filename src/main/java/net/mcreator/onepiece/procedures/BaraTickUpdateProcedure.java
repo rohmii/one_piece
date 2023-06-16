@@ -87,7 +87,7 @@ public class BaraTickUpdateProcedure {
 			}
 			if (entity.getPersistentData().getBoolean("tertiaryactive") == true) {
 				if (entity.getPersistentData().getDouble("tertiarycounter") < 100) {
-					entity.getPersistentData().putDouble("tertiarycounter", (entity.getPersistentData().getDouble("tertiarycounter") + 1.5));
+					entity.getPersistentData().putDouble("tertiarycounter", (entity.getPersistentData().getDouble("tertiarycounter") + 0.75));
 					if (world.isClientSide()) {
 						if (entity instanceof AbstractClientPlayer player) {
 							var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("one_piece", "player_animation"));

@@ -15,6 +15,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.onepiece.procedures.TertiaryBar7Procedure;
+import net.mcreator.onepiece.procedures.TertiaryBar6Procedure;
+import net.mcreator.onepiece.procedures.TertiaryBar5Procedure;
+import net.mcreator.onepiece.procedures.TertiaryBar4Procedure;
+import net.mcreator.onepiece.procedures.TertiaryBar3Procedure;
+import net.mcreator.onepiece.procedures.TertiaryBar2Procedure;
+import net.mcreator.onepiece.procedures.TertiaryBar1Procedure;
 import net.mcreator.onepiece.procedures.SecondaryBar7Procedure;
 import net.mcreator.onepiece.procedures.SecondaryBar6Procedure;
 import net.mcreator.onepiece.procedures.SecondaryBar5Procedure;
@@ -42,7 +49,7 @@ public class DevilFruitHudOverlay {
 		int w = event.getWindow().getGuiScaledWidth();
 		int h = event.getWindow().getGuiScaledHeight();
 		int posX = w / 2;
-		int posY = h;
+		int posY = h / 2;
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -132,8 +139,40 @@ public class DevilFruitHudOverlay {
 				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 116, posY + -23, 0, 0, 22, 22, 22, 22);
 			}
 			RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_0.png"));
-			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 139, posY + -23, 0, 0, 22, 22, 22, 22);
+			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
 
+			if (BaraDisplayConditionProcedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/bara_tertiary.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 138, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
+			if (TertiaryBar1Procedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_1.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
+			if (TertiaryBar2Procedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_2.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
+			if (TertiaryBar3Procedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_3.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
+			if (TertiaryBar4Procedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_4.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
+			if (TertiaryBar5Procedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_5.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
+			if (TertiaryBar6Procedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_6.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
+			if (TertiaryBar7Procedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("one_piece:textures/screens/power_bar_7.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 137, posY + -23, 0, 0, 22, 22, 22, 22);
+			}
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();
