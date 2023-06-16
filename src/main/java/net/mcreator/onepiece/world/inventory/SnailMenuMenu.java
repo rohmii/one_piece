@@ -41,7 +41,7 @@ public class SnailMenuMenu extends AbstractContainerMenu implements Supplier<Map
 			this.y = pos.getY();
 			this.z = pos.getZ();
 		}
-		SnailMenuThisGUIIsOpenedProcedure.execute(world, x, y, z, guistate);
+		SnailMenuThisGUIIsOpenedProcedure.execute(world, entity, guistate);
 	}
 
 	@Override

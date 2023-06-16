@@ -22,6 +22,7 @@ public class DenDenRightClickedProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity.getPersistentData().getBoolean("messagestored") == false) {
+			sourceentity.getPersistentData().putString("number", (entity.getPersistentData().getString("number")));
 			{
 				if (sourceentity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = new BlockPos(x, y, z);
