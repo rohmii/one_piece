@@ -17,7 +17,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.onepiece.procedures.SnailMenuWhileThisGUIIsOpenTickProcedure;
-import net.mcreator.onepiece.procedures.SnailMenuThisGUIIsClosedProcedure;
 import net.mcreator.onepiece.init.OnePieceModMenus;
 
 import java.util.function.Supplier;
@@ -56,12 +55,6 @@ public class SnailMenuMenu extends AbstractContainerMenu implements Supplier<Map
 	@Override
 	public ItemStack quickMoveStack(Player playerIn, int index) {
 		return ItemStack.EMPTY;
-	}
-
-	@Override
-	public void removed(Player playerIn) {
-		super.removed(playerIn);
-		SnailMenuThisGUIIsClosedProcedure.execute(world, x, y, z, entity, guistate);
 	}
 
 	public Map<Integer, Slot> get() {

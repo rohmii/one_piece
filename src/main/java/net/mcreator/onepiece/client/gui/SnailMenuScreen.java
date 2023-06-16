@@ -9,11 +9,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.onepiece.world.inventory.SnailMenuMenu;
 import net.mcreator.onepiece.procedures.RenderSnailProcedure;
 import net.mcreator.onepiece.procedures.RenderRecieverProcedure;
+import net.mcreator.onepiece.network.SnailMenuButtonMessage;
+import net.mcreator.onepiece.OnePieceMod;
 
 import java.util.HashMap;
 
@@ -28,6 +31,7 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 	EditBox receievernumber;
 	EditBox sendernumber;
 	EditBox message;
+	Button button_send_message;
 
 	public SnailMenuScreen(SnailMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -161,5 +165,13 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 		message.setMaxLength(32767);
 		guistate.put("text:message", message);
 		this.addWidget(this.message);
+		button_send_message = new Button(this.leftPos + 164, this.topPos + 6, 88, 20, Component.translatable("gui.one_piece.snail_menu.button_send_message"), e -> {
+			if (true) {
+				OnePieceMod.PACKET_HANDLER.sendToServer(new SnailMenuButtonMessage(0, x, y, z));
+				SnailMenuButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		});
+		guistate.put("button:button_send_message", button_send_message);
+		this.addRenderableWidget(button_send_message);
 	}
 }

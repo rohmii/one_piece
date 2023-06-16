@@ -68,13 +68,24 @@
           "x": 215,
           "y": 165
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_send_message",
+          "text": "Send Message",
+          "onClick": {
+            "name": "SnailMenuThisGUIIsClosed"
+          },
+          "width": 88,
+          "height": 20,
+          "x": 246,
+          "y": 43
+        }
       }
     ],
     "onTick": {
       "name": "SnailMenuWhileThisGUIIsOpenTick"
-    },
-    "onClosed": {
-      "name": "SnailMenuThisGUIIsClosed"
     },
     "gridSettings": {
       "sx": 18,
