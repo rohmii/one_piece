@@ -11,12 +11,16 @@ import net.mcreator.onepiece.entity.DenDenMushiEntity;
 import java.util.HashMap;
 import java.util.Comparator;
 
-public class SnailMenuWhileThisGUIIsOpenTickProcedure {
+public class SnailMenuThisGUIIsOpenedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, HashMap guistate) {
 		if (guistate == null)
 			return;
+		if (guistate.get("text:message") instanceof EditBox _tf)
+			_tf.setValue("");
+		if (guistate.get("text:recievernumber") instanceof EditBox _tf)
+			_tf.setValue("");
 		if (guistate.get("text:sendernumber") instanceof EditBox _tf)
-			_tf.setValue(("Number - " + ((Entity) world.getEntitiesOfClass(DenDenMushiEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
+			_tf.setValue((((Entity) world.getEntitiesOfClass(DenDenMushiEntity.class, AABB.ofSize(new Vec3(x, y, z), 6, 6, 6), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}

@@ -35,6 +35,9 @@ public class SnailMenuThisGUIIsClosedProcedure {
 						entityiterator.getPersistentData().putDouble("type", 0);
 						entityiterator.getPersistentData().putDouble("typecounter", 0);
 						entityiterator.getPersistentData().putString("currentmessage", (guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : ""));
+						if (entity instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal((guistate.containsKey("text:message") ? ((EditBox) guistate.get("text:message")).getValue() : "")), false);
+						entityiterator.getPersistentData().putBoolean("storedmessage", true);
 					}
 				}
 			}

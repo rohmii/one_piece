@@ -733,42 +733,6 @@
       "path": "~/DenDenMushi"
     },
     {
-      "name": "SnailMenuWhileThisGUIIsOpenTick",
-      "type": "procedure",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "snail_menu_while_this_gui_is_open_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/onepiece/procedures/SnailMenuWhileThisGUIIsOpenTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/DenDenMushi"
-    },
-    {
       "name": "DenDenMushiOnInitialEntitySpawn",
       "type": "procedure",
       "sortid": 38,
@@ -935,6 +899,10 @@
           "src/main/java/net/mcreator/onepiece/procedures/DenDenRightClickedProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -1121,6 +1089,42 @@
           "src/main/resources/assets/one_piece/models/item/portgas_d_ace_hat_helmet.json"
         ]
       }
+    },
+    {
+      "name": "SnailMenuThisGUIIsOpened",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snail_menu_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SnailMenuThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DenDenMushi"
     }
   ],
   "variable_elements": [
@@ -1182,6 +1186,7 @@
       "item.one_piece.straw_hat_chestplate": "elementgui.armor.body",
       "gui.one_piece.snail_menu.message": "Message:",
       "gui.one_piece.snail_menu.label_empty": "Your Number:",
+      "gui.one_piece.snail_menu.recievernumber": "Number",
       "subtitles.weewee": "Can I?",
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "item.one_piece.portgas_d_ace_hat_boots": "Portgas D Ace Hat Boots",

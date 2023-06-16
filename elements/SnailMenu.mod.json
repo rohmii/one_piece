@@ -27,7 +27,7 @@
         "type": "textfield",
         "data": {
           "placeholder": "Number",
-          "name": "receievernumber",
+          "name": "recievernumber",
           "width": 120,
           "height": 20,
           "x": 88,
@@ -84,8 +84,8 @@
         }
       }
     ],
-    "onTick": {
-      "name": "SnailMenuWhileThisGUIIsOpenTick"
+    "onOpen": {
+      "name": "SnailMenuThisGUIIsOpened"
     },
     "gridSettings": {
       "sx": 18,

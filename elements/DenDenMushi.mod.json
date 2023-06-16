@@ -102,6 +102,9 @@
     "onRightClickedOn": {
       "name": "DenDenRightClicked"
     },
+    "onMobTickUpdate": {
+      "name": "DenDenMushiOnEntityTickUpdate"
+    },
     "onInitialSpawn": {
       "name": "DenDenMushiOnInitialEntitySpawn"
     },

@@ -28,7 +28,7 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	EditBox receievernumber;
+	EditBox recievernumber;
 	EditBox sendernumber;
 	EditBox message;
 	Button button_send_message;
@@ -51,7 +51,7 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-		receievernumber.render(ms, mouseX, mouseY, partialTicks);
+		recievernumber.render(ms, mouseX, mouseY, partialTicks);
 		sendernumber.render(ms, mouseX, mouseY, partialTicks);
 		message.render(ms, mouseX, mouseY, partialTicks);
 		if (RenderSnailProcedure.execute(world, x, y, z) instanceof LivingEntity livingEntity) {
@@ -78,8 +78,8 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-		if (receievernumber.isFocused())
-			return receievernumber.keyPressed(key, b, c);
+		if (recievernumber.isFocused())
+			return recievernumber.keyPressed(key, b, c);
 		if (sendernumber.isFocused())
 			return sendernumber.keyPressed(key, b, c);
 		if (message.isFocused())
@@ -90,7 +90,7 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 	@Override
 	public void containerTick() {
 		super.containerTick();
-		receievernumber.tick();
+		recievernumber.tick();
 		sendernumber.tick();
 		message.tick();
 	}
@@ -109,16 +109,16 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		receievernumber = new EditBox(this.font, this.leftPos + 6, this.topPos + 129, 120, 20, Component.translatable("gui.one_piece.snail_menu.receievernumber")) {
+		recievernumber = new EditBox(this.font, this.leftPos + 6, this.topPos + 129, 120, 20, Component.translatable("gui.one_piece.snail_menu.recievernumber")) {
 			{
-				setSuggestion(Component.translatable("gui.one_piece.snail_menu.receievernumber").getString());
+				setSuggestion(Component.translatable("gui.one_piece.snail_menu.recievernumber").getString());
 			}
 
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
 				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.one_piece.snail_menu.receievernumber").getString());
+					setSuggestion(Component.translatable("gui.one_piece.snail_menu.recievernumber").getString());
 				else
 					setSuggestion(null);
 			}
@@ -127,14 +127,14 @@ public class SnailMenuScreen extends AbstractContainerScreen<SnailMenuMenu> {
 			public void moveCursorTo(int pos) {
 				super.moveCursorTo(pos);
 				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.one_piece.snail_menu.receievernumber").getString());
+					setSuggestion(Component.translatable("gui.one_piece.snail_menu.recievernumber").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		receievernumber.setMaxLength(32767);
-		guistate.put("text:receievernumber", receievernumber);
-		this.addWidget(this.receievernumber);
+		recievernumber.setMaxLength(32767);
+		guistate.put("text:recievernumber", recievernumber);
+		this.addWidget(this.recievernumber);
 		sendernumber = new EditBox(this.font, this.leftPos + 7, this.topPos + 6, 120, 20, Component.translatable("gui.one_piece.snail_menu.sendernumber"));
 		sendernumber.setMaxLength(32767);
 		guistate.put("text:sendernumber", sendernumber);
