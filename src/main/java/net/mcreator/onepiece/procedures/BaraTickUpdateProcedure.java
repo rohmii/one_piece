@@ -1,5 +1,6 @@
 package net.mcreator.onepiece.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -8,10 +9,13 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.player.AbstractClientPlayer;
 
 import net.mcreator.onepiece.network.OnePieceModVariables;
@@ -50,6 +54,15 @@ public class BaraTickUpdateProcedure {
 			}
 			if (entity.getPersistentData().getBoolean("secondaryactive") == true) {
 				if (entity.getPersistentData().getDouble("secondarycounter") < 100) {
+					if (Math.random() > 0.9) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.elytra.flying")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.5);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.elytra.flying")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.5, false);
+							}
+						}
+					}
 					entity.getPersistentData().putDouble("secondarycounter", (entity.getPersistentData().getDouble("secondarycounter") + 1.5));
 					if (world.isClientSide()) {
 						if (entity instanceof AbstractClientPlayer player) {
@@ -66,6 +79,15 @@ public class BaraTickUpdateProcedure {
 						for (Entity entityiterator : _entfound) {
 							if ((entityiterator.getCapability(OnePieceModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OnePieceModVariables.PlayerVariables())).ChopChopUser == false) {
 								entityiterator.hurt(DamageSource.GENERIC, 1);
+								if (Math.random() > 0.6) {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.weak")), SoundSource.NEUTRAL, 1, (float) 1.25);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.weak")), SoundSource.NEUTRAL, 1, (float) 1.25, false);
+										}
+									}
+								}
 							}
 						}
 					}

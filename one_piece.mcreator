@@ -194,30 +194,6 @@
       "path": "~/Bara"
     },
     {
-      "name": "BaraPassive",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bara_passive",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/onepiece/procedures/BaraPassiveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Bara"
-    },
-    {
       "name": "DevilFruitHudDisplayOverlayIngame",
       "type": "procedure",
       "sortid": 11,
@@ -663,6 +639,14 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -692,10 +676,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/one_piece/forge/biome_modifier/den_den_mushi_biome_modifier.json",
-          "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java",
+          "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json",
           "src/main/java/net/mcreator/onepiece/client/renderer/DenDenMushiRenderer.java",
           "src/main/java/net/mcreator/onepiece/entity/model/DenDenMushiModel.java",
-          "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json"
+          "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java"
         ]
       }
     },
@@ -863,10 +847,10 @@
       "registry_name": "straw_hat",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java",
           "src/main/java/net/mcreator/onepiece/item/StrawHatItem.java",
           "src/main/resources/assets/one_piece/models/item/straw_hat_helmet.json",
-          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java",
-          "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java"
+          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java"
         ]
       }
     },
