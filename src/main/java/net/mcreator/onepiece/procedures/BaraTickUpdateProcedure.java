@@ -57,9 +57,9 @@ public class BaraTickUpdateProcedure {
 					if (Math.random() > 0.9) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.elytra.flying")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.5);
+								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.elytra.flying")), SoundSource.NEUTRAL, (float) 0.1, (float) 1.5);
 							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.elytra.flying")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.5, false);
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.elytra.flying")), SoundSource.NEUTRAL, (float) 0.1, (float) 1.5, false);
 							}
 						}
 					}
@@ -79,12 +79,12 @@ public class BaraTickUpdateProcedure {
 						for (Entity entityiterator : _entfound) {
 							if ((entityiterator.getCapability(OnePieceModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OnePieceModVariables.PlayerVariables())).ChopChopUser == false) {
 								entityiterator.hurt(DamageSource.GENERIC, 1);
-								if (Math.random() > 0.6) {
+								if (Math.random() > 0.9) {
 									if (world instanceof Level _level) {
 										if (!_level.isClientSide()) {
-											_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.weak")), SoundSource.NEUTRAL, 1, (float) 1.25);
+											_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.weak")), SoundSource.NEUTRAL, (float) 0.6, (float) 1.25);
 										} else {
-											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.weak")), SoundSource.NEUTRAL, 1, (float) 1.25, false);
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.weak")), SoundSource.NEUTRAL, (float) 0.6, (float) 1.25, false);
 										}
 									}
 								}

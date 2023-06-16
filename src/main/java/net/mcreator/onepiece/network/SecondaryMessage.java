@@ -53,7 +53,7 @@ public class SecondaryMessage {
 			return;
 		if (type == 0) {
 
-			SecondaryOnKeyPressedProcedure.execute(entity);
+			SecondaryOnKeyPressedProcedure.execute(world, entity);
 		}
 		if (type == 1) {
 

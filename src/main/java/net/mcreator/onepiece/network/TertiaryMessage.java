@@ -53,7 +53,7 @@ public class TertiaryMessage {
 			return;
 		if (type == 0) {
 
-			TertiaryOnKeyPressedProcedure.execute(entity);
+			TertiaryOnKeyPressedProcedure.execute(world, entity);
 		}
 		if (type == 1) {
 
