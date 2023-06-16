@@ -255,13 +255,11 @@
 			}
 		},
 		"bara.spin": {
-			"loop": true,
 			"animation_length": 0.66667,
 			"override_previous_animation": true,
 			"anim_time_update": "0",
 			"blend_weight": "0",
 			"start_delay": "0",
-			"loop_delay": "0",
 			"bones": {
 				"head": {
 					"rotation": {
@@ -676,12 +674,10 @@
 			}
 		},
 		"bara.float": {
-			"loop": true,
 			"animation_length": 2,
 			"anim_time_update": "0",
 			"blend_weight": "0",
 			"start_delay": "0",
-			"loop_delay": "0",
 			"bones": {
 				"head": {
 					"position": {
