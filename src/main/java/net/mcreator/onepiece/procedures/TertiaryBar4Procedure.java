@@ -1,6 +1,8 @@
 package net.mcreator.onepiece.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class TertiaryBar4Procedure {
 	public static boolean execute(Entity entity) {
