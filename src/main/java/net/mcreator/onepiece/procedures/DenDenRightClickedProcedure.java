@@ -21,7 +21,7 @@ public class DenDenRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity.getPersistentData().getBoolean("messagestored") == false) {
+		if (entity.getPersistentData().getBoolean("storedmessage") == false) {
 			sourceentity.getPersistentData().putString("number", (entity.getPersistentData().getString("number")));
 			{
 				if (sourceentity instanceof ServerPlayer _ent) {
@@ -42,7 +42,8 @@ public class DenDenRightClickedProcedure {
 		} else {
 			if (entity.getPersistentData().getBoolean("messageplaying") == true) {
 				entity.getPersistentData().putBoolean("messageplaying", false);
-				entity.getPersistentData().putBoolean("messagestored", false);
+				entity.getPersistentData().putBoolean("storedmessage", false);
+				entity.setCustomName(Component.literal(""));
 			} else {
 				entity.getPersistentData().putBoolean("messageplaying", true);
 			}

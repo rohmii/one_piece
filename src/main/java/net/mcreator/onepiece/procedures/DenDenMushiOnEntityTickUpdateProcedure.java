@@ -20,8 +20,6 @@ public class DenDenMushiOnEntityTickUpdateProcedure {
 				} else {
 					entity.getPersistentData().putDouble("typecounter", (entity.getPersistentData().getDouble("typecounter") + 1));
 				}
-			} else {
-				entity.getPersistentData().putString("currentmessage", "0");
 			}
 		}
 	}

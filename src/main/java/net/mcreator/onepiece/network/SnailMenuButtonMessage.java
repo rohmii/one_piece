@@ -64,7 +64,7 @@ public class SnailMenuButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			SnailMenuThisGUIIsClosedProcedure.execute(world, x, y, z, entity, guistate);
+			SnailMenuThisGUIIsClosedProcedure.execute(world, x, y, z, guistate);
 		}
 	}
 

@@ -84,7 +84,7 @@
         }
       }
     ],
-    "onOpen": {
+    "onTick": {
       "name": "SnailMenuThisGUIIsOpened"
     },
     "gridSettings": {
