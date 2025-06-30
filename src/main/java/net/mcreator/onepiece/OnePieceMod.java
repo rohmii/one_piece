@@ -17,13 +17,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.onepiece.world.features.StructureFeature;
 import net.mcreator.onepiece.init.OnePieceModTabs;
 import net.mcreator.onepiece.init.OnePieceModSounds;
 import net.mcreator.onepiece.init.OnePieceModPaintings;
 import net.mcreator.onepiece.init.OnePieceModMenus;
 import net.mcreator.onepiece.init.OnePieceModItems;
-import net.mcreator.onepiece.init.OnePieceModFeatures;
 import net.mcreator.onepiece.init.OnePieceModEntities;
 
 import java.util.function.Supplier;
@@ -51,8 +49,6 @@ public class OnePieceMod {
 		OnePieceModEntities.REGISTRY.register(bus);
 
 		OnePieceModTabs.REGISTRY.register(bus);
-		OnePieceModFeatures.REGISTRY.register(bus);
-		StructureFeature.REGISTRY.register(bus);
 
 		OnePieceModPaintings.REGISTRY.register(bus);
 

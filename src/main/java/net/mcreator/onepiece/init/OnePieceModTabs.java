@@ -21,9 +21,7 @@ public class OnePieceModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(OnePieceModItems.DEN_DEN_MUSHI_SPAWN_EGG.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(OnePieceModItems.STRAW_HAT_HELMET.get());
 		}
 	}

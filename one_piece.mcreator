@@ -518,10 +518,10 @@
       "registry_name": "den_den_mushi",
       "metadata": {
         "files": [
-          "src/main/resources/data/one_piece/forge/biome_modifier/den_den_mushi_biome_modifier.json",
           "src/main/resources/assets/one_piece/models/item/den_den_mushi_spawn_egg.json",
           "src/main/java/net/mcreator/onepiece/client/renderer/DenDenMushiRenderer.java",
           "src/main/java/net/mcreator/onepiece/entity/model/DenDenMushiModel.java",
+          "src/main/resources/data/one_piece/forge/biome_modifier/den_den_mushi_biome_modifier.json",
           "src/main/java/net/mcreator/onepiece/entity/DenDenMushiEntity.java"
         ]
       },
@@ -1252,38 +1252,6 @@
       }
     },
     {
-      "name": "RedLine",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_line",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/one_piece/forge/biome_modifier/red_line_biome_modifier.json",
-          "src/main/resources/data/one_piece/worldgen/configured_feature/red_line.json",
-          "src/main/resources/data/one_piece/worldgen/placed_feature/red_line.json",
-          "src/main/java/net/mcreator/onepiece/world/features/RedLineFeature.java"
-        ],
-        "has_nbt_structure": true
-      }
-    },
-    {
-      "name": "RedLine2",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_line_2",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/one_piece/forge/biome_modifier/red_line_2_biome_modifier.json",
-          "src/main/resources/data/one_piece/worldgen/configured_feature/red_line_2.json",
-          "src/main/resources/data/one_piece/worldgen/placed_feature/red_line_2.json",
-          "src/main/java/net/mcreator/onepiece/world/features/RedLine2Feature.java"
-        ]
-      }
-    },
-    {
       "name": "FlareFlareFruit",
       "type": "item",
       "compiles": true,
@@ -1315,6 +1283,22 @@
         ]
       },
       "path": "~/Flare"
+    },
+    {
+      "name": "SeaKing1",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_king_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/forge/biome_modifier/sea_king_1_biome_modifier.json",
+          "src/main/java/net/mcreator/onepiece/entity/SeaKing1Entity.java",
+          "src/main/resources/assets/one_piece/models/item/sea_king_1_spawn_egg.json",
+          "src/main/java/net/mcreator/onepiece/client/renderer/SeaKing1Renderer.java",
+          "src/main/java/net/mcreator/onepiece/entity/model/SeaKing1Model.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1399,10 +1383,12 @@
       "biome.one_piece.ocean": "Ocean",
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
       "painting.one_piece.wanted_1.author": "me",
+      "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
       "item.one_piece.overtaken": "Music Disc",
       "item.one_piece.overtaken.desc": "Overtaken OST",
       "key.one_piece.secondary": "Secondary",
       "gui.one_piece.snail_menu.button_send_message": "Send Message",
+      "entity.one_piece.sea_king_1": "Sea King 1",
       "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
       "gui.one_piece.snail_menu.sendernumber": "",
       "subtitles.strawhatequip": "strawhat",

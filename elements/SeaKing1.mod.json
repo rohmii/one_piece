@@ -2,29 +2,29 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Den Den Mushi",
+    "mobName": "Sea King 1",
     "mobLabel": "",
-    "mobModelTexture": "den_den_mushi.png",
+    "mobModelTexture": "sea_king_1.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 15.0
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
     "entityDataEntries": [],
-    "modelWidth": 0.4,
-    "modelHeight": 0.5,
-    "modelShadowSize": 0.4,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -331793,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -3356246,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTabs": [],
@@ -49,18 +49,18 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 0,
+    "attackStrength": 3,
     "attackKnockback": 0.0,
-    "knockbackResistance": 0.19999999999999998,
-    "movementSpeed": 0.03,
-    "armorBaseValue": 0.19999999999999998,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 5,
+    "health": 100,
     "xpAmount": 0,
-    "waterMob": false,
+    "waterMob": true,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -71,21 +71,21 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
-    "immuneToArrows": true,
-    "immuneToFallDamage": true,
-    "immuneToCactus": true,
+    "immuneToFire": true,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
     "immuneToDrowning": true,
-    "immuneToLightning": false,
-    "immuneToPotions": true,
+    "immuneToLightning": true,
+    "immuneToPotions": false,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
-    "immuneToAnvil": true,
+    "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.SLIME_BALL"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -102,24 +102,15 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "onRightClickedOn": {
-      "name": "DenDenRightClicked"
-    },
-    "onMobTickUpdate": {
-      "name": "DenDenMushiOnEntityTickUpdate"
-    },
-    "onInitialSpawn": {
-      "name": "DenDenMushiOnInitialEntitySpawn"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"panic_when_attacked\"><field name=\"speed\">0</field><field name=\"condition\">null,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"breed\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "den_den_mushi.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_with_range\"><field name=\"range\">2</field><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field></block></next></block></next></block><block type=\"attack_on_collide\" x=\"477\" y=\"147\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block><block type=\"panic_when_attacked\" x=\"888\" y=\"267\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field></block></xml>",
+    "model": "sea_king_1.geo.json",
     "groupName": "",
-    "animation1": "animation.Den_Den_Mushi.idle",
+    "animation1": "sea_king_1.Swim1",
     "animation2": "",
     "animation3": "",
-    "animation4": "",
+    "animation4": "sea_king_1.Swim2",
     "animation5": "",
     "animation6": "",
     "animation7": "",
@@ -128,7 +119,7 @@
     "animation10": "",
     "enable2": false,
     "enable3": false,
-    "enable4": false,
+    "enable4": true,
     "enable5": false,
     "enable6": false,
     "enable7": false,
@@ -160,12 +151,16 @@
       2
     ],
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": false,
-    "spawningProbability": 20,
-    "mobSpawningType": "creature",
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 2,
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Ocean"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

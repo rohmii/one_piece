@@ -25,6 +25,7 @@ public class OnePieceModItems {
 	public static final RegistryObject<Item> OVERTAKEN = REGISTRY.register("overtaken", () -> new OvertakenItem());
 	public static final RegistryObject<Item> GUM_GUM_FRUIT = REGISTRY.register("gum_gum_fruit", () -> new GumGumFruitItem());
 	public static final RegistryObject<Item> FLARE_FLARE_FRUIT = REGISTRY.register("flare_flare_fruit", () -> new FlareFlareFruitItem());
+	public static final RegistryObject<Item> SEA_KING_1_SPAWN_EGG = REGISTRY.register("sea_king_1_spawn_egg", () -> new ForgeSpawnEggItem(OnePieceModEntities.SEA_KING_1, -1, -1, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "one_piece:ocean",
-  "features": "one_piece:red_line_2",
-  "step": "surface_structures"
-}

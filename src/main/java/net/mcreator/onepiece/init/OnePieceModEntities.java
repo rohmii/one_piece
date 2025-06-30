@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.onepiece.entity.SeaKing1Entity;
 import net.mcreator.onepiece.entity.DenDenMushiEntity;
 import net.mcreator.onepiece.OnePieceMod;
 
@@ -26,6 +27,8 @@ public class OnePieceModEntities {
 			EntityType.Builder.<DenDenMushiEntity>of(DenDenMushiEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DenDenMushiEntity::new)
 
 					.sized(0.4f, 0.5f));
+	public static final RegistryObject<EntityType<SeaKing1Entity>> SEA_KING_1 = register("sea_king_1",
+			EntityType.Builder.<SeaKing1Entity>of(SeaKing1Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeaKing1Entity::new).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -37,11 +40,13 @@ public class OnePieceModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			DenDenMushiEntity.init();
+			SeaKing1Entity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(DEN_DEN_MUSHI.get(), DenDenMushiEntity.createAttributes().build());
+		event.put(SEA_KING_1.get(), SeaKing1Entity.createAttributes().build());
 	}
 }
