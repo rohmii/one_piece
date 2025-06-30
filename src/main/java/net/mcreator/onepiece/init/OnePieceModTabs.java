@@ -25,7 +25,6 @@ public class OnePieceModTabs {
 			tabData.accept(OnePieceModItems.DEN_DEN_MUSHI_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(OnePieceModItems.STRAW_HAT_HELMET.get());
-			tabData.accept(OnePieceModItems.PORTGAS_D_ACE_HAT_HELMET.get());
 		}
 	}
 }
