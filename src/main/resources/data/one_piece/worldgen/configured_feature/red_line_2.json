@@ -1,0 +1,8 @@
+{
+  "type": "one_piece:red_line_2",
+  "config": {
+    "structure": "one_piece:red_line_2",
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

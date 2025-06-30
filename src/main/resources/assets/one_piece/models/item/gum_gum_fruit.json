@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "one_piece:item/gum_gum_fruit"
+  }
+}

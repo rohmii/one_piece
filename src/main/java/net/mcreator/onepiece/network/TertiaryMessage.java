@@ -44,7 +44,7 @@ public class TertiaryMessage {
 	}
 
 	public static void pressAction(Player entity, int type, int pressedms) {
-		Level world = entity.level;
+		Level world = entity.level();
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
@@ -53,7 +53,7 @@ public class TertiaryMessage {
 			return;
 		if (type == 0) {
 
-			TertiaryOnKeyPressedProcedure.execute(entity);
+			TertiaryOnKeyPressedProcedure.execute(world, entity);
 		}
 		if (type == 1) {
 

@@ -44,7 +44,7 @@ public class SecondaryMessage {
 	}
 
 	public static void pressAction(Player entity, int type, int pressedms) {
-		Level world = entity.level;
+		Level world = entity.level();
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
@@ -53,11 +53,11 @@ public class SecondaryMessage {
 			return;
 		if (type == 0) {
 
-			SecondaryOnKeyPressedProcedure.execute(entity);
+			SecondaryOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 		if (type == 1) {
 
-			SecondaryOnKeyReleasedProcedure.execute(world, entity);
+			SecondaryOnKeyReleasedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

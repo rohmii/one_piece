@@ -15,7 +15,7 @@ import net.mcreator.onepiece.OnePieceMod;
 
 public class OnePieceModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, OnePieceMod.MODID);
-	public static final RegistryObject<SoundEvent> OVERTAKEN = REGISTRY.register("overtaken", () -> new SoundEvent(new ResourceLocation("one_piece", "overtaken")));
-	public static final RegistryObject<SoundEvent> STRAWHATEQUIP = REGISTRY.register("strawhatequip", () -> new SoundEvent(new ResourceLocation("one_piece", "strawhatequip")));
-	public static final RegistryObject<SoundEvent> DENDENMUSHIRINGTONE = REGISTRY.register("dendenmushiringtone", () -> new SoundEvent(new ResourceLocation("one_piece", "dendenmushiringtone")));
+	public static final RegistryObject<SoundEvent> OVERTAKEN = REGISTRY.register("overtaken", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("one_piece", "overtaken")));
+	public static final RegistryObject<SoundEvent> STRAWHATEQUIP = REGISTRY.register("strawhatequip", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("one_piece", "strawhatequip")));
+	public static final RegistryObject<SoundEvent> DEN_DEN_MUSHI_RINGTONE = REGISTRY.register("den_den_mushi_ringtone", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("one_piece", "den_den_mushi_ringtone")));
 }

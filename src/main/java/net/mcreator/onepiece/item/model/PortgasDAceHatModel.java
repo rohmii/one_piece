@@ -1,12 +1,12 @@
 package net.mcreator.onepiece.item.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.onepiece.item.PortgasDAceHatItem;
 
-public class PortgasDAceHatModel extends AnimatedGeoModel<PortgasDAceHatItem> {
+public class PortgasDAceHatModel extends GeoModel<PortgasDAceHatItem> {
 	@Override
 	public ResourceLocation getAnimationResource(PortgasDAceHatItem object) {
 		return new ResourceLocation("one_piece", "animations/portgas.dace_hat.animation.json");
@@ -19,6 +19,6 @@ public class PortgasDAceHatModel extends AnimatedGeoModel<PortgasDAceHatItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(PortgasDAceHatItem object) {
-		return new ResourceLocation("one_piece", "textures/items/portgasd_ace.png");
+		return new ResourceLocation("one_piece", "textures/item/portgasd_ace.png");
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 73,
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
@@ -13,6 +13,7 @@
     "creativeTab": {
       "value": "COMBAT"
     },
+    "creativeTabs": [],
     "armorTextureFile": "portgasd_ace.png",
     "model": "portgas.dace_hat.geo.json",
     "idle": "PortgasDAce_Hat.animation",

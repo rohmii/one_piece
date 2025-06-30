@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.onepiece.init;
 
@@ -22,24 +22,6 @@ import net.mcreator.onepiece.OnePieceMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class OnePieceModKeyMappings {
-	public static final KeyMapping SECONDARY = new KeyMapping("key.one_piece.secondary", GLFW.GLFW_KEY_C, "key.categories.misc") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				OnePieceMod.PACKET_HANDLER.sendToServer(new SecondaryMessage(0, 0));
-				SecondaryMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-				SECONDARY_LASTPRESS = System.currentTimeMillis();
-			} else if (isDownOld != isDown && !isDown) {
-				int dt = (int) (System.currentTimeMillis() - SECONDARY_LASTPRESS);
-				OnePieceMod.PACKET_HANDLER.sendToServer(new SecondaryMessage(1, dt));
-				SecondaryMessage.pressAction(Minecraft.getInstance().player, 1, dt);
-			}
-			isDownOld = isDown;
-		}
-	};
 	public static final KeyMapping PRIMARY = new KeyMapping("key.one_piece.primary", GLFW.GLFW_KEY_G, "key.categories.misc") {
 		private boolean isDownOld = false;
 
@@ -53,7 +35,7 @@ public class OnePieceModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping TERTIARY = new KeyMapping("key.one_piece.tertiary", GLFW.GLFW_KEY_V, "key.categories.misc") {
+	public static final KeyMapping TERTIARY = new KeyMapping("key.one_piece.tertiary", GLFW.GLFW_KEY_K, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -71,14 +53,32 @@ public class OnePieceModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	private static long SECONDARY_LASTPRESS = 0;
+	public static final KeyMapping SECONDARY = new KeyMapping("key.one_piece.secondary", GLFW.GLFW_KEY_UNKNOWN, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				OnePieceMod.PACKET_HANDLER.sendToServer(new SecondaryMessage(0, 0));
+				SecondaryMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				SECONDARY_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - SECONDARY_LASTPRESS);
+				OnePieceMod.PACKET_HANDLER.sendToServer(new SecondaryMessage(1, dt));
+				SecondaryMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long TERTIARY_LASTPRESS = 0;
+	private static long SECONDARY_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-		event.register(SECONDARY);
 		event.register(PRIMARY);
 		event.register(TERTIARY);
+		event.register(SECONDARY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -86,9 +86,9 @@ public class OnePieceModKeyMappings {
 		@SubscribeEvent
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
-				SECONDARY.consumeClick();
 				PRIMARY.consumeClick();
 				TERTIARY.consumeClick();
+				SECONDARY.consumeClick();
 			}
 		}
 	}

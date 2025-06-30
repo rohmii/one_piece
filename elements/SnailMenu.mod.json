@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -20,7 +20,8 @@
           "rotationX": 0,
           "followMouseMovement": true,
           "x": 127,
-          "y": 105
+          "y": 105,
+          "locked": false
         }
       },
       {
@@ -31,7 +32,8 @@
           "width": 120,
           "height": 20,
           "x": 88,
-          "y": 166
+          "y": 166,
+          "locked": false
         }
       },
       {
@@ -42,7 +44,8 @@
           "width": 120,
           "height": 20,
           "x": 89,
-          "y": 43
+          "y": 43,
+          "locked": false
         }
       },
       {
@@ -55,7 +58,8 @@
           "rotationX": 22,
           "followMouseMovement": true,
           "x": 268,
-          "y": 107
+          "y": 107,
+          "locked": false
         }
       },
       {
@@ -66,7 +70,8 @@
           "width": 120,
           "height": 20,
           "x": 215,
-          "y": 165
+          "y": 165,
+          "locked": false
         }
       },
       {
@@ -74,13 +79,15 @@
         "data": {
           "name": "button_send_message",
           "text": "Send Message",
+          "isUndecorated": false,
           "onClick": {
             "name": "SnailMenuThisGUIIsClosed"
           },
           "width": 88,
           "height": 20,
           "x": 246,
-          "y": 43
+          "y": 43,
+          "locked": false
         }
       }
     ],

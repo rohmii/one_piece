@@ -13,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class OvertakenItem extends RecordItem {
 	public OvertakenItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("one_piece:overtaken")), new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.RARE), 24000);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("one_piece:overtaken")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 24000);
 	}
 
 	@Override

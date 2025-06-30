@@ -16,11 +16,11 @@
       }
     ]
   },
-  "dendenmushiringtone": {
-    "subtitle": "subtitles.dendenmushiringtone",
+  "den_den_mushi_ringtone": {
+    "subtitle": "subtitles.den_den_mushi_ringtone",
     "sounds": [
       {
-        "name": "one_piece:ringtone-den-den-mushi-bere-bere-bere_5tco5psj",
+        "name": "one_piece:den_den_mushi_ringtone",
         "stream": false
       }
     ]

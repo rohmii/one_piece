@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 73,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,8 +9,10 @@
         "data": {
           "image": "power_bar_0.png",
           "use1Xscale": false,
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -21,8 +23,10 @@
           "displayCondition": {
             "name": "BaraDisplayCondition"
           },
+          "anchorPoint": "CENTER",
           "x": 308,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -33,8 +37,10 @@
           "displayCondition": {
             "name": "PrimaryBar1"
           },
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -45,8 +51,10 @@
           "displayCondition": {
             "name": "PrimaryBar2"
           },
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -57,8 +65,10 @@
           "displayCondition": {
             "name": "PrimaryBar3"
           },
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -69,8 +79,10 @@
           "displayCondition": {
             "name": "PrimaryBar4"
           },
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -81,8 +93,10 @@
           "displayCondition": {
             "name": "PrimaryBar5"
           },
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -93,8 +107,10 @@
           "displayCondition": {
             "name": "PrimaryBar6"
           },
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -105,8 +121,10 @@
           "displayCondition": {
             "name": "PrimaryBar7"
           },
+          "anchorPoint": "CENTER",
           "x": 307,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -114,8 +132,10 @@
         "data": {
           "image": "power_bar_0.png",
           "use1Xscale": false,
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -126,8 +146,10 @@
           "displayCondition": {
             "name": "BaraDisplayCondition"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -138,8 +160,10 @@
           "displayCondition": {
             "name": "SecondaryBar1"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -150,8 +174,10 @@
           "displayCondition": {
             "name": "SecondaryBar2"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -162,8 +188,10 @@
           "displayCondition": {
             "name": "SecondaryBar3"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -174,8 +202,10 @@
           "displayCondition": {
             "name": "SecondaryBar4"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -186,8 +216,10 @@
           "displayCondition": {
             "name": "SecondaryBar5"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -198,8 +230,10 @@
           "displayCondition": {
             "name": "SecondaryBar6"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -210,8 +244,10 @@
           "displayCondition": {
             "name": "SecondaryBar7"
           },
+          "anchorPoint": "CENTER",
           "x": 329,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -219,8 +255,10 @@
         "data": {
           "image": "power_bar_0.png",
           "use1Xscale": false,
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -231,8 +269,10 @@
           "displayCondition": {
             "name": "BaraDisplayCondition"
           },
+          "anchorPoint": "CENTER",
           "x": 351,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -243,8 +283,10 @@
           "displayCondition": {
             "name": "TertiaryBar1"
           },
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -255,8 +297,10 @@
           "displayCondition": {
             "name": "TertiaryBar2"
           },
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -267,8 +311,10 @@
           "displayCondition": {
             "name": "TertiaryBar3"
           },
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -279,8 +325,10 @@
           "displayCondition": {
             "name": "TertiaryBar4"
           },
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -291,8 +339,10 @@
           "displayCondition": {
             "name": "TertiaryBar5"
           },
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -303,8 +353,10 @@
           "displayCondition": {
             "name": "TertiaryBar6"
           },
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       },
       {
@@ -315,8 +367,10 @@
           "displayCondition": {
             "name": "TertiaryBar7"
           },
+          "anchorPoint": "CENTER",
           "x": 350,
-          "y": 97
+          "y": 97,
+          "locked": false
         }
       }
     ],

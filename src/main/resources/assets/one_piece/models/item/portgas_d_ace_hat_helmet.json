@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "one_piece:items/portgasdacehat"
+    "layer0": "one_piece:item/portgasdacehat"
   }
 }
