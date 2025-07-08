@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "one_piece:ocean",
+  "spawners": {
+    "type": "one_piece:south_bird",
+    "weight": 4,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

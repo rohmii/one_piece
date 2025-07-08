@@ -647,10 +647,10 @@
       "registry_name": "straw_hat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java",
-          "src/main/java/net/mcreator/onepiece/item/StrawHatItem.java",
+          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java",
           "src/main/resources/assets/one_piece/models/item/straw_hat_helmet.json",
-          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java"
+          "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java",
+          "src/main/java/net/mcreator/onepiece/item/StrawHatItem.java"
         ]
       }
     },
@@ -944,8 +944,8 @@
       "registry_name": "overtaken",
       "metadata": {
         "files": [
-          "src/main/resources/assets/one_piece/models/item/overtaken.json",
-          "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java"
+          "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java",
+          "src/main/resources/assets/one_piece/models/item/overtaken.json"
         ]
       }
     },
@@ -1057,8 +1057,8 @@
       "registry_name": "gum_gum_fruit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/one_piece/models/item/gum_gum_fruit.json",
-          "src/main/java/net/mcreator/onepiece/item/GumGumFruitItem.java"
+          "src/main/java/net/mcreator/onepiece/item/GumGumFruitItem.java",
+          "src/main/resources/assets/one_piece/models/item/gum_gum_fruit.json"
         ]
       },
       "path": "~/DevilFruits"
@@ -1245,8 +1245,8 @@
       "registry_name": "one_piece",
       "metadata": {
         "files": [
-          "src/main/resources/data/one_piece/dimension/one_piece.json",
           "src/main/java/net/mcreator/onepiece/world/dimension/OnePieceDimension.java",
+          "src/main/resources/data/one_piece/dimension/one_piece.json",
           "src/main/resources/data/one_piece/dimension_type/one_piece.json"
         ]
       }
@@ -1390,6 +1390,22 @@
           "src/main/java/net/mcreator/onepiece/item/IronKatanaItem.java"
         ]
       }
+    },
+    {
+      "name": "SouthBird",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "south_bird",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/forge/biome_modifier/south_bird_biome_modifier.json",
+          "src/main/java/net/mcreator/onepiece/entity/SouthBirdEntity.java",
+          "src/main/java/net/mcreator/onepiece/entity/model/SouthBirdModel.java",
+          "src/main/resources/assets/one_piece/models/item/south_bird_spawn_egg.json",
+          "src/main/java/net/mcreator/onepiece/client/renderer/SouthBirdRenderer.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1484,11 +1500,13 @@
     "en_us": {
       "biome.one_piece.ocean": "Ocean",
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
+      "item.one_piece.iron_katana": "Iron Katana",
       "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
       "painting.one_piece.wanted_1.author": "me",
       "item.one_piece.overtaken": "Music Disc",
       "item.one_piece.overtaken.desc": "Overtaken OST",
       "key.one_piece.secondary": "Secondary",
+      "item.one_piece.south_bird_spawn_egg": "South Bird Spawn Egg",
       "gui.one_piece.snail_menu.button_send_message": "Send Message",
       "entity.one_piece.sea_king_1": "Sea King 1",
       "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
@@ -1508,6 +1526,7 @@
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "subtitles.den_den_mushi_ringtone": "ringtone",
       "subtitles.parry": "Parry",
+      "entity.one_piece.south_bird": "South Bird",
       "item.one_piece.gum_gum_fruit": "Gum Gum Fruit",
       "item.one_piece.straw_hat_helmet": "Straw Hat ",
       "gui.one_piece.snail_menu.receievernumber": "Number",
