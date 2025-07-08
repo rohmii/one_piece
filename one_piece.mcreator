@@ -1519,6 +1519,10 @@
     "name": "~",
     "children": [
       {
+        "name": "DenDenMushi",
+        "children": []
+      },
+      {
         "name": "HUDs",
         "children": []
       },
@@ -1527,19 +1531,15 @@
         "children": []
       },
       {
-        "name": "DevilFruits",
-        "children": []
-      },
-      {
-        "name": "DenDenMushi",
-        "children": []
-      },
-      {
         "name": "Gum",
         "children": []
       },
       {
         "name": "Flare",
+        "children": []
+      },
+      {
+        "name": "DevilFruits",
         "children": []
       }
     ]

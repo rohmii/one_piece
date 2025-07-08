@@ -1,19 +1,6 @@
 package net.mcreator.onepiece.procedures;
 
-import net.minecraftforge.network.NetworkDirection;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.Connection;
-
-import net.mcreator.onepiece.OnePieceMod;
-
-import java.util.List;
-import java.util.Iterator;
+import net.minecraftforge.eventbus.api.Event;
 
 public class IronKatanaRightclickedProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
