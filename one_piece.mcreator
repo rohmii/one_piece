@@ -1292,11 +1292,102 @@
       "registry_name": "sea_king_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/one_piece/forge/biome_modifier/sea_king_1_biome_modifier.json",
           "src/main/java/net/mcreator/onepiece/entity/SeaKing1Entity.java",
+          "src/main/resources/data/one_piece/forge/biome_modifier/sea_king_1_biome_modifier.json",
           "src/main/resources/assets/one_piece/models/item/sea_king_1_spawn_egg.json",
           "src/main/java/net/mcreator/onepiece/client/renderer/SeaKing1Renderer.java",
           "src/main/java/net/mcreator/onepiece/entity/model/SeaKing1Model.java"
+        ]
+      }
+    },
+    {
+      "name": "IronKatanaRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_katana_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/IronKatanaRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Parry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/ParryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronKatana",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_katana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/one_piece/models/item/iron_katana.json",
+          "src/main/java/net/mcreator/onepiece/item/IronKatanaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ParryDetection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parry_detection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/ParryDetectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -1363,11 +1454,22 @@
       ],
       "category": "master",
       "subtitle": "ringtone"
+    },
+    {
+      "name": "parry",
+      "files": [
+        "parry"
+      ],
+      "category": "neutral",
+      "subtitle": "Parry"
     }
   ],
   "tag_elements": {
     "BIOMES:minecraft:has_structure/shipwreck": [
       "~CUSTOM:Ocean"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:IronKatana"
     ],
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:Overtaken"
@@ -1382,6 +1484,7 @@
     "en_us": {
       "biome.one_piece.ocean": "Ocean",
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
+      "item.one_piece.iron_katana": "Iron Katana",
       "painting.one_piece.wanted_1.author": "me",
       "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
       "item.one_piece.overtaken": "Music Disc",
@@ -1405,6 +1508,7 @@
       "subtitles.weewee": "Can I?",
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "subtitles.den_den_mushi_ringtone": "ringtone",
+      "subtitles.parry": "Parry",
       "item.one_piece.gum_gum_fruit": "Gum Gum Fruit",
       "item.one_piece.straw_hat_helmet": "Straw Hat ",
       "gui.one_piece.snail_menu.receievernumber": "Number",

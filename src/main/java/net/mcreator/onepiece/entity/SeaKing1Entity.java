@@ -224,7 +224,7 @@ public class SeaKing1Entity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("sea_king_1.Swim1"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("Swim1"));
 		}
 		return PlayState.STOP;
 	}
@@ -242,7 +242,7 @@ public class SeaKing1Entity extends Monster implements GeoEntity {
 		}
 		if (this.swinging && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 			event.getController().forceAnimationReset();
-			return event.setAndContinue(RawAnimation.begin().thenPlay("sea_king_1.Swim2"));
+			return event.setAndContinue(RawAnimation.begin().thenPlay("Swim2"));
 		}
 		return PlayState.CONTINUE;
 	}

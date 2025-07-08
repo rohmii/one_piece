@@ -24,5 +24,14 @@
         "stream": false
       }
     ]
+  },
+  "parry": {
+    "subtitle": "subtitles.parry",
+    "sounds": [
+      {
+        "name": "one_piece:parry",
+        "stream": false
+      }
+    ]
   }
 }

@@ -23,6 +23,7 @@ public class OnePieceModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(OnePieceModItems.STRAW_HAT_HELMET.get());
+			tabData.accept(OnePieceModItems.IRON_KATANA.get());
 		}
 	}
 }

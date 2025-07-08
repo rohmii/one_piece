@@ -1,6 +1,7 @@
 {
   "biome.one_piece.ocean": "Ocean",
   "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
+  "item.one_piece.iron_katana": "Iron Katana",
   "painting.one_piece.wanted_1.author": "me",
   "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
   "item.one_piece.overtaken": "Music Disc",
@@ -24,6 +25,7 @@
   "subtitles.weewee": "Can I?",
   "entity.one_piece.den_den_mushi": "Den Den Mushi",
   "subtitles.den_den_mushi_ringtone": "ringtone",
+  "subtitles.parry": "Parry",
   "item.one_piece.gum_gum_fruit": "Gum Gum Fruit",
   "item.one_piece.straw_hat_helmet": "Straw Hat ",
   "gui.one_piece.snail_menu.receievernumber": "Number",
