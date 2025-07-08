@@ -647,10 +647,10 @@
       "registry_name": "straw_hat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java",
-          "src/main/resources/assets/one_piece/models/item/straw_hat_helmet.json",
           "src/main/java/net/mcreator/onepiece/client/renderer/StrawHatArmorRenderer.java",
-          "src/main/java/net/mcreator/onepiece/item/StrawHatItem.java"
+          "src/main/java/net/mcreator/onepiece/item/StrawHatItem.java",
+          "src/main/resources/assets/one_piece/models/item/straw_hat_helmet.json",
+          "src/main/java/net/mcreator/onepiece/item/model/StrawHatModel.java"
         ]
       }
     },
@@ -944,8 +944,8 @@
       "registry_name": "overtaken",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java",
-          "src/main/resources/assets/one_piece/models/item/overtaken.json"
+          "src/main/resources/assets/one_piece/models/item/overtaken.json",
+          "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java"
         ]
       }
     },
@@ -1057,8 +1057,8 @@
       "registry_name": "gum_gum_fruit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/onepiece/item/GumGumFruitItem.java",
-          "src/main/resources/assets/one_piece/models/item/gum_gum_fruit.json"
+          "src/main/resources/assets/one_piece/models/item/gum_gum_fruit.json",
+          "src/main/java/net/mcreator/onepiece/item/GumGumFruitItem.java"
         ]
       },
       "path": "~/DevilFruits"
@@ -1245,8 +1245,8 @@
       "registry_name": "one_piece",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/onepiece/world/dimension/OnePieceDimension.java",
           "src/main/resources/data/one_piece/dimension/one_piece.json",
+          "src/main/java/net/mcreator/onepiece/world/dimension/OnePieceDimension.java",
           "src/main/resources/data/one_piece/dimension_type/one_piece.json"
         ]
       }
