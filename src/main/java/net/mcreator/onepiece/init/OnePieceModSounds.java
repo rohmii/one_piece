@@ -18,4 +18,5 @@ public class OnePieceModSounds {
 	public static final RegistryObject<SoundEvent> OVERTAKEN = REGISTRY.register("overtaken", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("one_piece", "overtaken")));
 	public static final RegistryObject<SoundEvent> STRAWHATEQUIP = REGISTRY.register("strawhatequip", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("one_piece", "strawhatequip")));
 	public static final RegistryObject<SoundEvent> DEN_DEN_MUSHI_RINGTONE = REGISTRY.register("den_den_mushi_ringtone", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("one_piece", "den_den_mushi_ringtone")));
+	public static final RegistryObject<SoundEvent> PARRY = REGISTRY.register("parry", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("one_piece", "parry")));
 }
