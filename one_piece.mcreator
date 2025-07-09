@@ -1303,7 +1303,7 @@
     {
       "name": "IronKatanaRightclicked",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "iron_katana_rightclicked",
       "metadata": {
@@ -1329,7 +1329,7 @@
     {
       "name": "Parry",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "parry",
       "metadata": {
@@ -1347,7 +1347,7 @@
     {
       "name": "IronKatana",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "iron_katana",
       "metadata": {
@@ -1360,7 +1360,7 @@
     {
       "name": "ParryDetection",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "parry_detection",
       "metadata": {
@@ -1388,6 +1388,38 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "SouthBird",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "south_bird",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/forge/biome_modifier/south_bird_biome_modifier.json",
+          "src/main/java/net/mcreator/onepiece/entity/SouthBirdEntity.java",
+          "src/main/resources/assets/one_piece/models/item/south_bird_spawn_egg.json",
+          "src/main/java/net/mcreator/onepiece/client/renderer/SouthBirdRenderer.java",
+          "src/main/java/net/mcreator/onepiece/entity/model/SouthBirdModel.java"
+        ]
+      }
+    },
+    {
+      "name": "NewsCoo",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "news_coo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/entity/model/NewsCooModel.java",
+          "src/main/resources/assets/one_piece/models/item/news_coo_spawn_egg.json",
+          "src/main/resources/data/one_piece/forge/biome_modifier/news_coo_biome_modifier.json",
+          "src/main/java/net/mcreator/onepiece/entity/NewsCooEntity.java",
+          "src/main/java/net/mcreator/onepiece/client/renderer/NewsCooRenderer.java"
         ]
       }
     }
@@ -1485,11 +1517,14 @@
       "biome.one_piece.ocean": "Ocean",
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
       "item.one_piece.iron_katana": "Iron Katana",
-      "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
       "painting.one_piece.wanted_1.author": "me",
+      "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
       "item.one_piece.overtaken": "Music Disc",
       "item.one_piece.overtaken.desc": "Overtaken OST",
+      "entity.one_piece.news_coo": "South Bird",
+      "item.one_piece.news_coo_spawn_egg": "South Bird Spawn Egg",
       "key.one_piece.secondary": "Secondary",
+      "item.one_piece.south_bird_spawn_egg": "South Bird Spawn Egg",
       "gui.one_piece.snail_menu.button_send_message": "Send Message",
       "entity.one_piece.sea_king_1": "Sea King 1",
       "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
@@ -1509,6 +1544,7 @@
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "subtitles.den_den_mushi_ringtone": "ringtone",
       "subtitles.parry": "Parry",
+      "entity.one_piece.south_bird": "South Bird",
       "item.one_piece.gum_gum_fruit": "Gum Gum Fruit",
       "item.one_piece.straw_hat_helmet": "Straw Hat ",
       "gui.one_piece.snail_menu.receievernumber": "Number",
