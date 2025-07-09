@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.onepiece.entity.SouthBirdEntity;
 import net.mcreator.onepiece.entity.SeaKing1Entity;
+import net.mcreator.onepiece.entity.NewsCooEntity;
 import net.mcreator.onepiece.entity.DenDenMushiEntity;
 import net.mcreator.onepiece.OnePieceMod;
 
@@ -34,6 +35,10 @@ public class OnePieceModEntities {
 			EntityType.Builder.<SouthBirdEntity>of(SouthBirdEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SouthBirdEntity::new)
 
 					.sized(1f, 1.2f));
+	public static final RegistryObject<EntityType<NewsCooEntity>> NEWS_COO = register("news_coo",
+			EntityType.Builder.<NewsCooEntity>of(NewsCooEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NewsCooEntity::new)
+
+					.sized(1f, 1.2f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -47,6 +52,7 @@ public class OnePieceModEntities {
 			DenDenMushiEntity.init();
 			SeaKing1Entity.init();
 			SouthBirdEntity.init();
+			NewsCooEntity.init();
 		});
 	}
 
@@ -55,5 +61,6 @@ public class OnePieceModEntities {
 		event.put(DEN_DEN_MUSHI.get(), DenDenMushiEntity.createAttributes().build());
 		event.put(SEA_KING_1.get(), SeaKing1Entity.createAttributes().build());
 		event.put(SOUTH_BIRD.get(), SouthBirdEntity.createAttributes().build());
+		event.put(NEWS_COO.get(), NewsCooEntity.createAttributes().build());
 	}
 }

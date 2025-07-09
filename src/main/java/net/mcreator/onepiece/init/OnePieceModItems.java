@@ -29,6 +29,7 @@ public class OnePieceModItems {
 	public static final RegistryObject<Item> SEA_KING_1_SPAWN_EGG = REGISTRY.register("sea_king_1_spawn_egg", () -> new ForgeSpawnEggItem(OnePieceModEntities.SEA_KING_1, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> IRON_KATANA = REGISTRY.register("iron_katana", () -> new IronKatanaItem());
 	public static final RegistryObject<Item> SOUTH_BIRD_SPAWN_EGG = REGISTRY.register("south_bird_spawn_egg", () -> new ForgeSpawnEggItem(OnePieceModEntities.SOUTH_BIRD, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> NEWS_COO_SPAWN_EGG = REGISTRY.register("news_coo_spawn_egg", () -> new ForgeSpawnEggItem(OnePieceModEntities.NEWS_COO, -1, -1, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }

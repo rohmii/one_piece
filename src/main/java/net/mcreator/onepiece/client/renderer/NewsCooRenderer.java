@@ -9,25 +9,25 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import net.mcreator.onepiece.entity.model.SouthBirdModel;
-import net.mcreator.onepiece.entity.SouthBirdEntity;
+import net.mcreator.onepiece.entity.model.NewsCooModel;
+import net.mcreator.onepiece.entity.NewsCooEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class SouthBirdRenderer extends GeoEntityRenderer<SouthBirdEntity> {
-	public SouthBirdRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new SouthBirdModel());
+public class NewsCooRenderer extends GeoEntityRenderer<NewsCooEntity> {
+	public NewsCooRenderer(EntityRendererProvider.Context renderManager) {
+		super(renderManager, new NewsCooModel());
 		this.shadowRadius = 0.5f;
 	}
 
 	@Override
-	public RenderType getRenderType(SouthBirdEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+	public RenderType getRenderType(NewsCooEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
 		return RenderType.entityTranslucent(getTextureLocation(animatable));
 	}
 
 	@Override
-	public void preRender(PoseStack poseStack, SouthBirdEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green,
+	public void preRender(PoseStack poseStack, NewsCooEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green,
 			float blue, float alpha) {
 		float scale = 1f;
 		this.scaleHeight = scale;

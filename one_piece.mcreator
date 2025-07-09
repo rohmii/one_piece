@@ -1406,6 +1406,22 @@
           "src/main/java/net/mcreator/onepiece/client/renderer/SouthBirdRenderer.java"
         ]
       }
+    },
+    {
+      "name": "NewsCoo",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "news_coo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/entity/NewsCooEntity.java",
+          "src/main/java/net/mcreator/onepiece/client/renderer/NewsCooRenderer.java",
+          "src/main/java/net/mcreator/onepiece/entity/model/NewsCooModel.java",
+          "src/main/resources/data/one_piece/forge/biome_modifier/news_coo_biome_modifier.json",
+          "src/main/resources/assets/one_piece/models/item/news_coo_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1501,10 +1517,12 @@
       "biome.one_piece.ocean": "Ocean",
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
       "item.one_piece.iron_katana": "Iron Katana",
-      "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
       "painting.one_piece.wanted_1.author": "me",
+      "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
       "item.one_piece.overtaken": "Music Disc",
       "item.one_piece.overtaken.desc": "Overtaken OST",
+      "entity.one_piece.news_coo": "South Bird",
+      "item.one_piece.news_coo_spawn_egg": "South Bird Spawn Egg",
       "key.one_piece.secondary": "Secondary",
       "item.one_piece.south_bird_spawn_egg": "South Bird Spawn Egg",
       "gui.one_piece.snail_menu.button_send_message": "Send Message",

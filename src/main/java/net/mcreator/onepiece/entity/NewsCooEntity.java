@@ -53,21 +53,21 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.onepiece.init.OnePieceModEntities;
 
-public class SouthBirdEntity extends PathfinderMob implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(SouthBirdEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(SouthBirdEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(SouthBirdEntity.class, EntityDataSerializers.STRING);
+public class NewsCooEntity extends PathfinderMob implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(NewsCooEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(NewsCooEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(NewsCooEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public SouthBirdEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(OnePieceModEntities.SOUTH_BIRD.get(), world);
+	public NewsCooEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(OnePieceModEntities.NEWS_COO.get(), world);
 	}
 
-	public SouthBirdEntity(EntityType<SouthBirdEntity> type, Level world) {
+	public NewsCooEntity(EntityType<NewsCooEntity> type, Level world) {
 		super(type, world);
 		xpReward = 3;
 		setNoAi(false);
@@ -80,7 +80,7 @@ public class SouthBirdEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "southbird_texture");
+		this.entityData.define(TEXTURE, "newscoomodel");
 	}
 
 	public void setTexture(String texture) {
@@ -107,10 +107,10 @@ public class SouthBirdEntity extends PathfinderMob implements GeoEntity {
 		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				RandomSource random = SouthBirdEntity.this.getRandom();
-				double dir_x = SouthBirdEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_y = SouthBirdEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_z = SouthBirdEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
+				RandomSource random = NewsCooEntity.this.getRandom();
+				double dir_x = NewsCooEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_y = NewsCooEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_z = NewsCooEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
@@ -192,7 +192,7 @@ public class SouthBirdEntity extends PathfinderMob implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(OnePieceModEntities.SOUTH_BIRD.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(OnePieceModEntities.NEWS_COO.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
@@ -209,7 +209,10 @@ public class SouthBirdEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.southbird.idle"));
+			if (!this.onGround()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.NewsCooModel.flight"));
+			}
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.NewsCooModel.idle"));
 		}
 		return PlayState.STOP;
 	}
@@ -237,7 +240,7 @@ public class SouthBirdEntity extends PathfinderMob implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(SouthBirdEntity.RemovalReason.KILLED);
+			this.remove(NewsCooEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}
