@@ -1303,7 +1303,7 @@
     {
       "name": "IronKatanaRightclicked",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "iron_katana_rightclicked",
       "metadata": {
@@ -1329,7 +1329,7 @@
     {
       "name": "Parry",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "parry",
       "metadata": {
@@ -1347,7 +1347,7 @@
     {
       "name": "IronKatana",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "iron_katana",
       "metadata": {
@@ -1360,7 +1360,7 @@
     {
       "name": "ParryDetection",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "parry_detection",
       "metadata": {
