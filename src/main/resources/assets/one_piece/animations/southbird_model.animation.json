@@ -8,14 +8,14 @@
 				"head": {
 					"rotation": {
 						"0.0": {
-							"vector": [0, 180, 0]
+							"vector": [0, 0, 0]
 						},
 						"0.5": {
-							"vector": [2.5, 180, 0],
+							"vector": [2.5, 0, 0],
 							"easing": "easeOutSine"
 						},
 						"1.0": {
-							"vector": [0, 180, 0],
+							"vector": [0, 0, 0],
 							"easing": "easeInSine"
 						}
 					}
@@ -90,14 +90,14 @@
 					},
 					"rotation": {
 						"0.0": {
-							"vector": [0, 180, 0]
+							"vector": [0, 0, 0]
 						},
 						"0.75": {
-							"vector": [-2.5, 180, 0],
+							"vector": [-2.5, 0, 0],
 							"easing": "easeOutSine"
 						},
 						"1.5": {
-							"vector": [0, 180, 0],
+							"vector": [0, 0, 0],
 							"easing": "easeInSine"
 						}
 					}

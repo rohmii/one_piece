@@ -209,6 +209,9 @@ public class SouthBirdEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
+			if (!this.onGround()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.southbird.flying"));
+			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.southbird.idle"));
 		}
 		return PlayState.STOP;
