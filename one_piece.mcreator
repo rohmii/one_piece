@@ -1292,8 +1292,8 @@
       "registry_name": "sea_king_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/one_piece/forge/biome_modifier/sea_king_1_biome_modifier.json",
           "src/main/java/net/mcreator/onepiece/entity/SeaKing1Entity.java",
+          "src/main/resources/data/one_piece/forge/biome_modifier/sea_king_1_biome_modifier.json",
           "src/main/resources/assets/one_piece/models/item/sea_king_1_spawn_egg.json",
           "src/main/java/net/mcreator/onepiece/client/renderer/SeaKing1Renderer.java",
           "src/main/java/net/mcreator/onepiece/entity/model/SeaKing1Model.java"
@@ -1318,40 +1318,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "ParryDetection",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "parry_detection",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/onepiece/procedures/ParryDetectionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -1392,6 +1358,40 @@
       }
     },
     {
+      "name": "ParryDetection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parry_detection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/ParryDetectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "SouthBird",
       "type": "animatedentity",
       "compiles": true,
@@ -1401,9 +1401,9 @@
         "files": [
           "src/main/resources/data/one_piece/forge/biome_modifier/south_bird_biome_modifier.json",
           "src/main/java/net/mcreator/onepiece/entity/SouthBirdEntity.java",
-          "src/main/java/net/mcreator/onepiece/entity/model/SouthBirdModel.java",
           "src/main/resources/assets/one_piece/models/item/south_bird_spawn_egg.json",
-          "src/main/java/net/mcreator/onepiece/client/renderer/SouthBirdRenderer.java"
+          "src/main/java/net/mcreator/onepiece/client/renderer/SouthBirdRenderer.java",
+          "src/main/java/net/mcreator/onepiece/entity/model/SouthBirdModel.java"
         ]
       }
     },
@@ -1415,11 +1415,11 @@
       "registry_name": "news_coo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/onepiece/entity/NewsCooEntity.java",
-          "src/main/java/net/mcreator/onepiece/client/renderer/NewsCooRenderer.java",
           "src/main/java/net/mcreator/onepiece/entity/model/NewsCooModel.java",
+          "src/main/resources/assets/one_piece/models/item/news_coo_spawn_egg.json",
           "src/main/resources/data/one_piece/forge/biome_modifier/news_coo_biome_modifier.json",
-          "src/main/resources/assets/one_piece/models/item/news_coo_spawn_egg.json"
+          "src/main/java/net/mcreator/onepiece/entity/NewsCooEntity.java",
+          "src/main/java/net/mcreator/onepiece/client/renderer/NewsCooRenderer.java"
         ]
       }
     }
