@@ -29,8 +29,8 @@ public class OnePieceModEntities {
 			EntityType.Builder.<DenDenMushiEntity>of(DenDenMushiEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DenDenMushiEntity::new)
 
 					.sized(0.4f, 0.5f));
-	public static final RegistryObject<EntityType<SeaKing1Entity>> SEA_KING_1 = register("sea_king_1",
-			EntityType.Builder.<SeaKing1Entity>of(SeaKing1Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeaKing1Entity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SeaKing1Entity>> SEA_KING_1 = register("sea_king_1", EntityType.Builder.<SeaKing1Entity>of(SeaKing1Entity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(SeaKing1Entity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SouthBirdEntity>> SOUTH_BIRD = register("south_bird",
 			EntityType.Builder.<SouthBirdEntity>of(SouthBirdEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SouthBirdEntity::new)
 

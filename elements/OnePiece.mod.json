@@ -4,7 +4,19 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Ocean"
+        "value": "CUSTOM:DesertIsland"
+      },
+      {
+        "value": "CUSTOM:SnowyIsland"
+      },
+      {
+        "value": "CUSTOM:GrassIsland"
+      },
+      {
+        "value": "CUSTOM:FreezingOcean"
+      },
+      {
+        "value": "CUSTOM:WarmOcean"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -14,7 +26,7 @@
     "fluidBlock": {
       "value": "Blocks.WATER"
     },
-    "seaLevel": 128,
+    "seaLevel": 121,
     "generateOreVeins": true,
     "generateAquifers": true,
     "horizontalNoiseSize": 1,

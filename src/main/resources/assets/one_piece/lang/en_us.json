@@ -1,5 +1,4 @@
 {
-  "biome.one_piece.ocean": "Ocean",
   "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
   "item.one_piece.iron_katana": "Iron Katana",
   "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
@@ -9,16 +8,19 @@
   "entity.one_piece.news_coo": "South Bird",
   "item.one_piece.news_coo_spawn_egg": "South Bird Spawn Egg",
   "key.one_piece.secondary": "Secondary",
+  "biome.one_piece.desert_island": "Desert Island",
   "item.one_piece.south_bird_spawn_egg": "South Bird Spawn Egg",
   "gui.one_piece.snail_menu.button_send_message": "Send Message",
   "entity.one_piece.sea_king_1": "Sea King 1",
   "item.one_piece.den_den_mushi_spawn_egg": "Den Den Mushi Spawn Egg",
   "gui.one_piece.snail_menu.sendernumber": "",
+  "item.one_piece.chop_chop_fruit": "Chop Chop Fruit",
   "subtitles.strawhatequip": "strawhat",
   "item.one_piece.flare_flare_fruit": "Flare Flare Fruit",
   "subtitles.overtaken": "",
   "key.one_piece.primary": "Primary",
   "key.one_piece.tertiary": "Tertiary",
+  "biome.one_piece.freezing_ocean": "Ocean",
   "item.one_piece.straw_hat_boots": "Straw Hat Boots",
   "item.one_piece.straw_hat_chestplate": "elementgui.armor.body",
   "gui.one_piece.snail_menu.message": "Message:",
@@ -31,7 +33,10 @@
   "subtitles.parry": "Parry",
   "entity.one_piece.south_bird": "South Bird",
   "item.one_piece.gum_gum_fruit": "Gum Gum Fruit",
+  "biome.one_piece.snowy_island": "Snowy Island",
   "item.one_piece.straw_hat_helmet": "Straw Hat ",
   "gui.one_piece.snail_menu.receievernumber": "Number",
-  "subtitles.dendenmushiringtone": "dendenmushi"
+  "biome.one_piece.grass_island": "Grass Island",
+  "subtitles.dendenmushiringtone": "dendenmushi",
+  "biome.one_piece.warm_ocean": "Ocean"
 }
