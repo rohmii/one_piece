@@ -19,7 +19,6 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.onepiece.init.OnePieceModTabs;
 import net.mcreator.onepiece.init.OnePieceModSounds;
-import net.mcreator.onepiece.init.OnePieceModPaintings;
 import net.mcreator.onepiece.init.OnePieceModMenus;
 import net.mcreator.onepiece.init.OnePieceModItems;
 import net.mcreator.onepiece.init.OnePieceModEntities;
@@ -49,8 +48,6 @@ public class OnePieceMod {
 		OnePieceModEntities.REGISTRY.register(bus);
 
 		OnePieceModTabs.REGISTRY.register(bus);
-
-		OnePieceModPaintings.REGISTRY.register(bus);
 
 		OnePieceModMenus.REGISTRY.register(bus);
 

@@ -725,16 +725,6 @@
       "path": "~/DenDenMushi"
     },
     {
-      "name": "Wanted1",
-      "type": "painting",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wanted_1",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "DenDenRightClicked",
       "type": "procedure",
       "compiles": true,
@@ -935,19 +925,6 @@
         ]
       },
       "path": "~/DenDenMushi"
-    },
-    {
-      "name": "Overtaken",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "overtaken",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/one_piece/models/item/overtaken.json",
-          "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java"
-        ]
-      }
     },
     {
       "name": "GumGumPistol",
@@ -1297,7 +1274,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Swords"
     },
     {
       "name": "Parry",
@@ -1315,7 +1293,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Swords"
     },
     {
       "name": "IronKatana",
@@ -1328,7 +1307,8 @@
           "src/main/resources/assets/one_piece/models/item/iron_katana.json",
           "src/main/java/net/mcreator/onepiece/item/IronKatanaItem.java"
         ]
-      }
+      },
+      "path": "~/Swords"
     },
     {
       "name": "ParryDetection",
@@ -1362,7 +1342,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Swords"
     },
     {
       "name": "SouthBird",
@@ -1523,6 +1504,77 @@
           "src/main/resources/data/one_piece/worldgen/configured_feature/warm_ocean_tree.json"
         ]
       }
+    },
+    {
+      "name": "MakamiFruit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami_fruit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/item/MakamiFruitItem.java",
+          "src/main/resources/assets/one_piece/models/item/makami_fruit.json"
+        ]
+      },
+      "path": "~/DevilFruits"
+    },
+    {
+      "name": "MakamiFruitEaten",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami_fruit_eaten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/MakamiFruitEatenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DevilFruits"
+    },
+    {
+      "name": "Makami",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/MakamiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Makami"
+    },
+    {
+      "name": "MakamiAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/MakamiAbilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Makami"
     }
   ],
   "variable_elements": [
@@ -1558,6 +1610,12 @@
     },
     {
       "name": "FlareFlareUser",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MakamiUser",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -1601,9 +1659,6 @@
     "ITEMS:minecraft:swords": [
       "~CUSTOM:IronKatana"
     ],
-    "ITEMS:minecraft:music_discs": [
-      "~CUSTOM:Overtaken"
-    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.SAND#0",
       "~Blocks.STONE#0",
@@ -1617,9 +1672,6 @@
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
       "item.one_piece.iron_katana": "Iron Katana",
       "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
-      "painting.one_piece.wanted_1.author": "me",
-      "item.one_piece.overtaken": "Music Disc",
-      "item.one_piece.overtaken.desc": "Overtaken OST",
       "entity.one_piece.news_coo": "South Bird",
       "item.one_piece.news_coo_spawn_egg": "South Bird Spawn Egg",
       "key.one_piece.secondary": "Secondary",
@@ -1641,8 +1693,8 @@
       "gui.one_piece.snail_menu.message": "Message:",
       "gui.one_piece.snail_menu.label_empty": "Your Number:",
       "gui.one_piece.snail_menu.recievernumber": "Number",
-      "painting.one_piece.wanted_1.title": "Wanted 1",
       "subtitles.weewee": "Can I?",
+      "item.one_piece.makami_fruit": "Makami Fruit",
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "subtitles.den_den_mushi_ringtone": "ringtone",
       "subtitles.parry": "Parry",
@@ -1681,6 +1733,14 @@
       },
       {
         "name": "DevilFruits",
+        "children": []
+      },
+      {
+        "name": "Makami",
+        "children": []
+      },
+      {
+        "name": "Swords",
         "children": []
       }
     ]

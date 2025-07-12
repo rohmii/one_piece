@@ -13,6 +13,8 @@ public class PrimaryOnKeyPressedProcedure {
 			if (entity.getPersistentData().getBoolean("pistol") == false) {
 				GumGumPistolProcedure.execute(world, x, y, z, entity);
 			}
+		} else if ((entity.getCapability(OnePieceModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new OnePieceModVariables.PlayerVariables())).MakamiUser == true) {
+			MakamiAbilityProcedure.execute(entity);
 		}
 	}
 }

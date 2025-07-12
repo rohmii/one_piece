@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "overtaken",
+    "texture": "makami",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Music Disc",
-    "rarity": "RARE",
+    "name": "Makami Fruit",
+    "rarity": "COMMON",
     "creativeTabs": [],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -28,10 +28,13 @@
       "fixedValue": []
     },
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "MakamiFruitEaten"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -39,21 +42,21 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
+    "isFood": true,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "none",
-    "isMusicDisc": true,
+    "animation": "eat",
+    "isMusicDisc": false,
     "musicDiscMusic": {
-      "value": "CUSTOM:overtaken"
+      "value": ""
     },
-    "musicDiscDescription": "Overtaken OST",
-    "musicDiscLengthInTicks": 24000,
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0
   }
 }
