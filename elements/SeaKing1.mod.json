@@ -107,7 +107,7 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_with_range\"><field name=\"range\">2</field><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field></block></next></block></next></block><block type=\"panic_when_attacked\" x=\"888\" y=\"267\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "sea_king_1.geo.json",
     "groupName": "",
-    "animation1": "Swim1",
+    "animation1": "animation.sea_king_1.swim",
     "animation2": "",
     "animation3": "",
     "animation4": "Swim2",
@@ -119,7 +119,7 @@
     "animation10": "",
     "enable2": false,
     "enable3": false,
-    "enable4": true,
+    "enable4": false,
     "enable5": false,
     "enable6": false,
     "enable7": false,
@@ -150,17 +150,13 @@
       4,
       2
     ],
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 1,
+    "mobSpawningType": "waterCreature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Ocean"
-      }
-    ],
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

@@ -1,6 +1,8 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "one_piece:ocean",
+  "biomes": {
+    "type": "forge:any"
+  },
   "spawners": {
     "type": "one_piece:south_bird",
     "weight": 4,

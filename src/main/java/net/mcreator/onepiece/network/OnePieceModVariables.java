@@ -86,6 +86,7 @@ public class OnePieceModVariables {
 			clone.DevilFruitUser = original.DevilFruitUser;
 			clone.GumGumUser = original.GumGumUser;
 			clone.FlareFlareUser = original.FlareFlareUser;
+			clone.MakamiUser = original.MakamiUser;
 			if (!event.isWasDeath()) {
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -270,6 +271,7 @@ public class OnePieceModVariables {
 		public boolean DevilFruitUser = false;
 		public boolean GumGumUser = false;
 		public boolean FlareFlareUser = false;
+		public boolean MakamiUser = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -282,6 +284,7 @@ public class OnePieceModVariables {
 			nbt.putBoolean("DevilFruitUser", DevilFruitUser);
 			nbt.putBoolean("GumGumUser", GumGumUser);
 			nbt.putBoolean("FlareFlareUser", FlareFlareUser);
+			nbt.putBoolean("MakamiUser", MakamiUser);
 			return nbt;
 		}
 
@@ -297,6 +300,7 @@ public class OnePieceModVariables {
 			DevilFruitUser = nbt.getBoolean("DevilFruitUser");
 			GumGumUser = nbt.getBoolean("GumGumUser");
 			FlareFlareUser = nbt.getBoolean("FlareFlareUser");
+			MakamiUser = nbt.getBoolean("MakamiUser");
 		}
 	}
 
@@ -334,6 +338,7 @@ public class OnePieceModVariables {
 					variables.DevilFruitUser = message.data.DevilFruitUser;
 					variables.GumGumUser = message.data.GumGumUser;
 					variables.FlareFlareUser = message.data.FlareFlareUser;
+					variables.MakamiUser = message.data.MakamiUser;
 				}
 			});
 			context.setPacketHandled(true);

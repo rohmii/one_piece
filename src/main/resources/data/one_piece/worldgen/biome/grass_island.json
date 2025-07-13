@@ -3,12 +3,12 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
-    "foliage_color": 10387789,
-    "grass_color": 9470285,
+    "foliage_color": -16751845,
+    "grass_color": -14380734,
     "sky_color": 7972607,
-    "fog_color": -10066330,
-    "water_color": -16777048,
-    "water_fog_color": -16777137
+    "fog_color": 12638463,
+    "water_color": -16751370,
+    "water_fog_color": 329011
   },
   "spawners": {
     "monster": [],
@@ -21,10 +21,18 @@
     "misc": []
   },
   "spawn_costs": {},
-  "carvers": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
   "features": [
     [],
-    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
     [],
     [],
     [],
@@ -49,7 +57,11 @@
     ],
     [],
     [],
-    [],
-    []
+    [
+      "one_piece:grass_island_tree"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
   ]
 }

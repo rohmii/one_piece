@@ -725,16 +725,6 @@
       "path": "~/DenDenMushi"
     },
     {
-      "name": "Wanted1",
-      "type": "painting",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wanted_1",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "DenDenRightClicked",
       "type": "procedure",
       "compiles": true,
@@ -935,19 +925,6 @@
         ]
       },
       "path": "~/DenDenMushi"
-    },
-    {
-      "name": "Overtaken",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "overtaken",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/one_piece/models/item/overtaken.json",
-          "src/main/java/net/mcreator/onepiece/item/OvertakenItem.java"
-        ]
-      }
     },
     {
       "name": "GumGumPistol",
@@ -1226,18 +1203,6 @@
       "path": "~/DevilFruits"
     },
     {
-      "name": "Ocean",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ocean",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/one_piece/worldgen/biome/ocean.json"
-        ]
-      }
-    },
-    {
       "name": "OnePiece",
       "type": "dimension",
       "compiles": true,
@@ -1422,6 +1387,186 @@
           "src/main/java/net/mcreator/onepiece/client/renderer/NewsCooRenderer.java"
         ]
       }
+    },
+    {
+      "name": "MakamiFruit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami_fruit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/item/MakamiFruitItem.java",
+          "src/main/resources/assets/one_piece/models/item/makami_fruit.json"
+        ]
+      },
+      "path": "~/DevilFruits"
+    },
+    {
+      "name": "DesertIsland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_island",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/worldgen/biome/desert_island.json"
+        ]
+      }
+    },
+    {
+      "name": "GrassIsland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_island",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/worldgen/biome/grass_island.json",
+          "src/main/resources/data/one_piece/worldgen/configured_feature/grass_island_tree.json",
+          "src/main/resources/data/one_piece/worldgen/placed_feature/grass_island_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "SouthBirdOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "south_bird_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/SouthBirdOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Makami",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/MakamiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Makami"
+    },
+    {
+      "name": "MakamiAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/MakamiAbilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Makami"
+    },
+    {
+      "name": "WarmOcean",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warm_ocean",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/worldgen/biome/warm_ocean.json",
+          "src/main/resources/data/one_piece/worldgen/placed_feature/warm_ocean_tree.json",
+          "src/main/resources/data/one_piece/worldgen/configured_feature/warm_ocean_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "SnowyIsland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowy_island",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/worldgen/placed_feature/snowy_island_tree.json",
+          "src/main/resources/data/one_piece/worldgen/configured_feature/snowy_island_tree.json",
+          "src/main/resources/data/one_piece/worldgen/biome/snowy_island.json"
+        ]
+      }
+    },
+    {
+      "name": "MakamiFruitEaten",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makami_fruit_eaten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/MakamiFruitEatenProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/DevilFruits"
+    },
+    {
+      "name": "ChopChopFruit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chop_chop_fruit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/item/ChopChopFruitItem.java",
+          "src/main/resources/assets/one_piece/models/item/chop_chop_fruit.json"
+        ]
+      },
+      "path": "~/DevilFruits"
+    },
+    {
+      "name": "ChopFruitEaten",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chop_fruit_eaten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/onepiece/procedures/ChopFruitEatenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DevilFruits"
+    },
+    {
+      "name": "FreezingOcean",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_ocean",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/one_piece/worldgen/biome/freezing_ocean.json",
+          "src/main/resources/data/one_piece/worldgen/placed_feature/freezing_ocean_tree.json",
+          "src/main/resources/data/one_piece/worldgen/configured_feature/freezing_ocean_tree.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1457,6 +1602,12 @@
     },
     {
       "name": "FlareFlareUser",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MakamiUser",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -1514,13 +1665,9 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "biome.one_piece.ocean": "Ocean",
       "item.one_piece.straw_hat_leggings": "Straw Hat Leggings",
       "item.one_piece.iron_katana": "Iron Katana",
       "item.one_piece.sea_king_1_spawn_egg": "Sea King 1 Spawn Egg",
-      "painting.one_piece.wanted_1.author": "me",
-      "item.one_piece.overtaken": "Music Disc",
-      "item.one_piece.overtaken.desc": "Overtaken OST",
       "entity.one_piece.news_coo": "South Bird",
       "item.one_piece.news_coo_spawn_egg": "South Bird Spawn Egg",
       "key.one_piece.secondary": "Secondary",
@@ -1539,7 +1686,6 @@
       "gui.one_piece.snail_menu.message": "Message:",
       "gui.one_piece.snail_menu.label_empty": "Your Number:",
       "gui.one_piece.snail_menu.recievernumber": "Number",
-      "painting.one_piece.wanted_1.title": "Wanted 1",
       "subtitles.weewee": "Can I?",
       "entity.one_piece.den_den_mushi": "Den Den Mushi",
       "subtitles.den_den_mushi_ringtone": "ringtone",
@@ -1555,6 +1701,10 @@
     "name": "~",
     "children": [
       {
+        "name": "Makami",
+        "children": []
+      },
+      {
         "name": "DenDenMushi",
         "children": []
       },
@@ -1568,6 +1718,10 @@
       },
       {
         "name": "Gum",
+        "children": []
+      },
+      {
+        "name": "Swords",
         "children": []
       },
       {
